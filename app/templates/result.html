@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Farmer Price Intelligence</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+
+<body>
+
+
+<div class="dashboard">
+
+
+    <!-- ===================================================== -->
+    <!-- HEADER -->
+    <!-- ===================================================== -->
+
+    <div class="dashboard-header">
+
+        <div>
+
+            <h1>
+                ðŸŒ¾ Farmer Price Intelligence
+            </h1>
+
+            <p>
+                Agricultural Market Intelligence & Decision Support
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ===================================================== -->
+    <!-- MARKET INFORMATION -->
+    <!-- ===================================================== -->
+
+    <div class="market-banner">
+
+        <div>
+
+            <span>
+                Commodity
+            </span>
+
+            <strong>
+                {{ commodity }}
+            </strong>
+
+        </div>
+
+
+        <div>
+
+            <span>
+                Selected District
+            </span>
+
+            <strong>
+                {{ district }}
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <!-- ===================================================== -->
+    <!-- TOP DASHBOARD CARDS -->
+    <!-- ===================================================== -->
+
+    <div class="dashboard-grid">
+
+
+        <!-- ================================================= -->
+        <!-- ML PREDICTION -->
+        <!-- ================================================= -->
+
+        <div class="dashboard-card prediction-card">
+
+            <div class="card-title">
+                ðŸ¤– ML Price Prediction
+            </div>
+
+
+            <div class="big-price">
+
+                ₹{{ prediction }}
+
+            </div>
+
+
+            <div class="price-label">
+
+                per Quintal
+
+            </div>
+
+
+            <div class="model-label">
+
+                Final XGBoost Model
+
+            </div>
+
+        </div>
+
+
+        <!-- ================================================= -->
+        <!-- FARMER INTELLIGENCE -->
+        <!-- ================================================= -->
+
+        {% if intelligence %}
+
+        <div class="dashboard-card">
+
+            <div class="card-title">
+
+                🧠 Farmer Intelligence
+
+            </div>
+
+
+            <div class="metric">
+
+                <span>
+                    30-Day Forecast Average
+                </span>
+
+                <strong>
+
+                    ₹{{ "%.2f"|format(
+                        intelligence.Forecast_Average_Price|float
+                    ) }}
+
+                </strong>
+
+            </div>
+
+
+            <div class="metric">
+
+                <span>
+                    Forecast Change
+                </span>
+
+                <strong>
+
+                    {{ "%.2f"|format(
+                        intelligence.Forecast_Change_pct|float
+                    ) }}%
+
+                </strong>
+
+            </div>
+
+
+            <div class="metric">
+
+                <span>
+                    Crisis Score
+                </span>
+
+                <strong>
+
+                    {{ "%.2f"|format(
+                        intelligence.Average_Crisis_Score|float
+                    ) }}
+
+                </strong>
+
+            </div>
+
+
+            <div class="metric">
+
+                <span>
+                    Farmer Intelligence Score
+                </span>
+
+                <strong>
+
+                    {{ "%.2f"|format(
+                        intelligence.Farmer_Intelligence_Score|float
+                    ) }}
+
+                    / 100
+
+                </strong>
+
+            </div>
+
+
+            <div class="metric">
+
+                <span>
+                    Risk Level
+                </span>
+
+                <strong>
+
+                    {{ intelligence.Final_Risk_Level }}
+
+                </strong>
+
+            </div>
+
+
+            <div class="metric">
+
+                <span>
+                    Forecast Volatility
+                </span>
+
+                <strong>
+
+                    {{ "%.2f"|format(
+                        intelligence.Forecast_Volatility_Score|float
+                    ) }}
+
+                </strong>
+
+            </div>
+
+        </div>
+
+        {% endif %}
+
+
+        <!-- ================================================= -->
+        <!-- SELECTED DISTRICT INTELLIGENCE -->
+        <!-- ================================================= -->
+
+        {% if district_intelligence %}
+
+        <div class="dashboard-card">
+
+            <div class="card-title">
+
+                📍 District Intelligence
+
+            </div>
+
+
+            <div class="metric">
+
+                <span>
+                    District
+                </span>
+
+                <strong>
+
+                    {{ district_intelligence.District }}
+
+                </strong>
+
+            </div>
+
+
+            <div class="metric">
+
+                <span>
+                    Cluster
+                </span>
+
+                <strong>
+
+                    {{ district_intelligence.Cluster }}
+
+                </strong>
+
+            </div>
+
+
+            <div class="metric">
+
+                <span>
+                    District Risk Score
+                </span>
+
+                <strong>
+
+                    {{ "%.2f"|format(
+                        district_intelligence.District_Risk_Score|float
+                    ) }}
+
+                </strong>
+
+            </div>
+
+
+            <div class="metric">
+
+                <span>
+                    District Risk Level
+                </span>
+
+                <strong>
+
+                    {{ district_intelligence.District_Risk_Level }}
+
+                </strong>
+
+            </div>
+
+        </div>
+
+        {% endif %}
+
+
+        <!-- ================================================= -->
+        <!-- BEST FORECASTED DISTRICT -->
+        <!-- ================================================= -->
+
+        {% if intelligence and intelligence.Best_Forecasted_District %}
+
+        <div class="dashboard-card">
+
+            <div class="card-title">
+
+                🏆 Best Forecasted District
+
+            </div>
+
+
+            <div class="metric">
+
+                <span>
+                    District
+                </span>
+
+                <strong>
+
+                    {{ intelligence.Best_Forecasted_District }}
+
+                </strong>
+
+            </div>
+
+
+            <div class="metric">
+
+                <span>
+                    30-Day Average Forecast
+                </span>
+
+                <strong>
+
+                    ₹{{ "%.2f"|format(
+                        intelligence.Best_District_Forecast_Average|float
+                    ) }}
+
+                </strong>
+
+            </div>
+
+
+            <div class="metric">
+
+                <span>
+                    Comparison
+                </span>
+
+                <strong>
+                    Highest forecasted average
+                </strong>
+
+            </div>
+
+        </div>
+
+        {% endif %}
+
+
+    </div>
+
+
+    <!-- ===================================================== -->
+    <!-- RECOMMENDATION -->
+    <!-- ===================================================== -->
+
+    {% if recommendation %}
+
+    <div class="recommendation-box">
+
+        <div class="card-title">
+
+            🌾 Farmer Recommendation
+
+        </div>
+
+
+        <p>
+
+            {{ recommendation.Recommendation }}
+
+        </p>
+
+
+        <div class="action-badge">
+
+            Recommended Action:
+
+            <strong>
+
+                {{ recommendation.Recommended_Action }}
+
+            </strong>
+
+        </div>
+
+    </div>
+
+    {% endif %}
+
+
+    <!-- ===================================================== -->
+    <!-- 30-DAY FORECAST -->
+    <!-- ===================================================== -->
+
+    {% if forecast %}
+
+    <div class="forecast-section">
+
+        <div class="card-title">
+
+            ðŸ“ˆ 30-Day Price Forecast
+
+        </div>
+
+
+        <!-- ================================================= -->
+        <!-- FORECAST SUMMARY CARDS -->
+        <!-- ================================================= -->
+
+        <div class="forecast-summary">
+
+
+            <div class="forecast-summary-card">
+
+                <span>
+                    Forecast Days
+                </span>
+
+                <strong>
+
+                    {{ forecast|length }}
+
+                </strong>
+
+            </div>
+
+
+            {% if intelligence %}
+
+            <div class="forecast-summary-card">
+
+                <span>
+                    Minimum Forecast
+                </span>
+
+                <strong>
+
+                    ₹{{ "%.2f"|format(
+                        intelligence.Forecast_Min_Price|float
+                    ) }}
+
+                </strong>
+
+            </div>
+
+
+            <div class="forecast-summary-card">
+
+                <span>
+                    Maximum Forecast
+                </span>
+
+                <strong>
+
+                    ₹{{ "%.2f"|format(
+                        intelligence.Forecast_Max_Price|float
+                    ) }}
+
+                </strong>
+
+            </div>
+
+
+            <div class="forecast-summary-card">
+
+                <span>
+                    Forecast Change
+                </span>
+
+                <strong>
+
+                    {{ "%.2f"|format(
+                        intelligence.Forecast_Change_pct|float
+                    ) }}%
+
+                </strong>
+
+            </div>
+
+            {% endif %}
+
+
+        </div>
+
+
+        <!-- ================================================= -->
+        <!-- FORECAST CHART -->
+        <!-- ================================================= -->
+
+        <div class="forecast-chart-card">
+
+            <canvas id="forecastChart"></canvas>
+
+        </div>
+
+
+        <!-- ================================================= -->
+        <!-- FORECAST TABLE -->
+        <!-- ================================================= -->
+
+        <div class="forecast-table-wrapper">
+
+            <table class="forecast-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Day
+                        </th>
+
+                        <th>
+                            Date
+                        </th>
+
+                        <th>
+                            Predicted Price
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    {% for item in forecast %}
+
+                    <tr>
+
+                        <td>
+                            {{ loop.index }}
+                        </td>
+
+
+                        <td>
+
+                            {% if item.Date %}
+
+                                {{ item.Date }}
+
+                            {% else %}
+
+                                N/A
+
+                            {% endif %}
+
+                        </td>
+
+
+                        <td>
+
+                            ₹{{ "%.2f"|format(
+                                item.Predicted_Price|float
+                            ) }}
+
+                        </td>
+
+                    </tr>
+
+                    {% endfor %}
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- CHART DATA -->
+    <!-- ================================================= -->
+
+    <script>
+
+        const forecastData = {{ forecast | tojson }};
+
+        const forecastDates = forecastData.map(
+            item => item.Date
+        );
+
+        const forecastPrices = forecastData.map(
+            item => Number(item.Predicted_Price)
+        );
+
+
+        const chartElement = document.getElementById(
+            "forecastChart"
+        );
+
+
+        if (
+            chartElement &&
+            forecastData.length > 0
+        ) {
+
+            new Chart(
+                chartElement,
+                {
+                    type: "line",
+
+                    data: {
+
+                        labels: forecastDates,
+
+                        datasets: [
+
+                            {
+                                label: "Predicted Price",
+
+                                data: forecastPrices,
+
+                                tension: 0.25,
+
+                                fill: false,
+
+                                pointRadius: 3,
+
+                                pointHoverRadius: 6,
+
+                                borderWidth: 2
+                            }
+
+                        ]
+
+                    },
+
+
+                    options: {
+
+                        responsive: true,
+
+                        maintainAspectRatio: false,
+
+
+                        interaction: {
+
+                            mode: "index",
+
+                            intersect: false
+
+                        },
+
+
+                        plugins: {
+
+                            legend: {
+
+                                display: true
+
+                            },
+
+
+                            tooltip: {
+
+                                callbacks: {
+
+                                    label: function(context) {
+
+                                        return (
+                                            " ₹" +
+                                            Number(
+                                                context.parsed.y
+                                            ).toFixed(2)
+                                        );
+
+                                    }
+
+                                }
+
+                            }
+
+                        },
+
+
+                        scales: {
+
+                            x: {
+
+                                title: {
+
+                                    display: true,
+
+                                    text: "Forecast Date"
+
+                                },
+
+
+                                ticks: {
+
+                                    maxTicksLimit: 10
+
+                                }
+
+                            },
+
+
+                            y: {
+
+                                beginAtZero: false,
+
+
+                                title: {
+
+                                    display: true,
+
+                                    text: "Price per Quintal (₹)"
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+            );
+
+        }
+
+    </script>
+
+    {% endif %}
+
+
+    <!-- ===================================================== -->
+    <!-- DECISION SUMMARY -->
+    <!-- ===================================================== -->
+
+    {% if intelligence and recommendation %}
+
+    <div class="dashboard-card decision-card">
+
+        <div class="card-title">
+
+            ðŸ“Š Decision Summary
+
+        </div>
+
+
+        <div class="metric">
+
+            <span>
+                Selected Commodity
+            </span>
+
+            <strong>
+
+                {{ commodity }}
+
+            </strong>
+
+        </div>
+
+
+        <div class="metric">
+
+            <span>
+                Selected District
+            </span>
+
+            <strong>
+
+                {{ district }}
+
+            </strong>
+
+        </div>
+
+
+        <div class="metric">
+
+            <span>
+                Current ML Prediction
+            </span>
+
+            <strong>
+
+                ₹{{ "%.2f"|format(
+                    prediction|float
+                ) }}
+
+            </strong>
+
+        </div>
+
+
+        <div class="metric">
+
+            <span>
+                Forecast Direction
+            </span>
+
+            <strong>
+
+                {% if intelligence.Forecast_Change_pct|float > 10 %}
+
+                    📈 Rising
+
+                {% elif intelligence.Forecast_Change_pct|float < -10 %}
+
+                    📉 Falling
+
+                {% else %}
+
+                    ➡️ Relatively Stable
+
+                {% endif %}
+
+            </strong>
+
+        </div>
+
+
+        <div class="metric">
+
+            <span>
+                Recommended Action
+            </span>
+
+            <strong>
+
+                {{ recommendation.Recommended_Action }}
+
+            </strong>
+
+        </div>
+
+
+        {% if intelligence.Best_Forecasted_District %}
+
+        <div class="metric">
+
+            <span>
+                Best Forecasted District
+            </span>
+
+            <strong>
+
+                {{ intelligence.Best_Forecasted_District }}
+
+            </strong>
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+    {% endif %}
+
+
+    <!-- ===================================================== -->
+    <!-- BACK BUTTON -->
+    <!-- ===================================================== -->
+
+    <div class="bottom-actions">
+
+        <a
+            href="/"
+            class="new-prediction-btn"
+        >
+            ← New Prediction
+        </a>
+
+    </div>
+
+
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title> Farmer's Price Intelligence</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="dashboard">
+
+
+    <!-- ===================================================== -->
+    <!-- HEADER -->
+    <!-- ===================================================== -->
+
+    <div class="dashboard-header">
+
+        <div>
+
+            <h1>
+                &#127806; Farmer's Price Intelligence
+            </h1>
+
+            <p>
+                Agricultural Market Intelligence & Decision Support
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ===================================================== -->
+    <!-- MAIN FORM -->
+    <!-- ===================================================== -->
+
+    <div class="prediction-form-card">
+
+
+        <div class="section-heading">
+
+            <span class="section-icon">
+                📍
+            </span>
+
+            <div>
+
+                <h2>
+                    Market Information
+                </h2>
+
+                <p>
+                    Select the market and commodity
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <form
+            action="/predict"
+            method="POST"
+        >
+
+
+            <!-- ================================================= -->
+            <!-- MARKET INFORMATION -->
+            <!-- ================================================= -->
+
+            <div class="form-grid">
+
+
+                <!-- STATE -->
+
+                <div class="form-group">
+
+                    <label for="state">
+                        State
+                    </label>
+
+                    <select
+                        id="state"
+                        name="state"
+                        required
+                    >
+
+                        {% for item in states %}
+
+                        <option value="{{ item }}">
+                            {{ item }}
+                        </option>
+
+                        {% endfor %}
+
+                    </select>
+
+                </div>
+
+
+                <!-- COMMODITY GROUP -->
+
+                <div class="form-group">
+
+                    <label for="commodity_group">
+                        Commodity Group
+                    </label>
+
+                    <select
+                        id="commodity_group"
+                        name="commodity_group"
+                        required
+                    >
+
+                        {% for item in commodity_groups %}
+
+                        <option value="{{ item }}">
+                            {{ item }}
+                        </option>
+
+                        {% endfor %}
+
+                    </select>
+
+                </div>
+
+
+                <!-- COMMODITY -->
+
+                <div class="form-group">
+
+                    <label for="commodity">
+                        Commodity
+                    </label>
+
+                    <select
+                        id="commodity"
+                        name="commodity"
+                        required
+                    >
+
+                        {% for item in commodities %}
+
+                        <option value="{{ item }}">
+                            {{ item }}
+                        </option>
+
+                        {% endfor %}
+
+                    </select>
+
+                </div>
+
+
+                <!-- DISTRICT -->
+
+                <div class="form-group">
+
+                    <label for="district">
+                        District
+                    </label>
+
+                    <select
+                        id="district"
+                        name="district"
+                        required
+                    >
+
+                        {% for item in districts %}
+
+                        <option value="{{ item }}">
+                            {{ item }}
+                        </option>
+
+                        {% endfor %}
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- MARKET SUPPLY -->
+            <!-- ================================================= -->
+
+            <div class="section-heading">
+
+                <span class="section-icon">
+                    📦
+                </span>
+
+                <div>
+
+                    <h2>
+                        Market Supply
+                    </h2>
+
+                    <p>
+                        Enter today's market arrival
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-grid">
+
+
+                <div class="form-group full-width">
+
+                    <label for="arrival">
+                        Arrival (Metric Tonnes)
+                    </label>
+
+                    <input
+                        id="arrival"
+                        type="number"
+                        name="arrival"
+                        step="0.01"
+                        min="0"
+                        placeholder="Example: 5000"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- WEATHER -->
+            <!-- ================================================= -->
+
+            <div class="section-heading">
+
+                <span class="section-icon">
+                    🌦
+                </span>
+
+                <div>
+
+                    <h2>
+                        Weather Conditions
+                    </h2>
+
+                    <p>
+                        Enter weather conditions for prediction date
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-grid">
+
+
+                <!-- MAX TEMP -->
+
+                <div class="form-group">
+
+                    <label for="max_temp">
+                        Maximum Temperature (°C)
+                    </label>
+
+                    <input
+                        id="max_temp"
+                        type="number"
+                        name="max_temp"
+                        step="0.1"
+                        placeholder="Example: 32.5"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- MIN TEMP -->
+
+                <div class="form-group">
+
+                    <label for="min_temp">
+                        Minimum Temperature (°C)
+                    </label>
+
+                    <input
+                        id="min_temp"
+                        type="number"
+                        name="min_temp"
+                        step="0.1"
+                        placeholder="Example: 18.2"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- RAINFALL -->
+
+                <div class="form-group">
+
+                    <label for="rainfall">
+                        Rainfall (mm)
+                    </label>
+
+                    <input
+                        id="rainfall"
+                        type="number"
+                        name="rainfall"
+                        step="0.1"
+                        min="0"
+                        placeholder="Example: 5.2"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- WIND -->
+
+                <div class="form-group">
+
+                    <label for="windspeed">
+                        Wind Speed (km/h)
+                    </label>
+
+                    <input
+                        id="windspeed"
+                        type="number"
+                        name="windspeed"
+                        step="0.1"
+                        min="0"
+                        placeholder="Example: 16.6"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- EVENTS -->
+            <!-- ================================================= -->
+
+            <div class="section-heading">
+
+                <span class="section-icon">
+                    📅
+                </span>
+
+                <div>
+
+                    <h2>
+                        Events
+                    </h2>
+
+                    <p>
+                        Select festival and holiday information
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-grid">
+
+
+                <!-- FESTIVAL -->
+
+                <div class="form-group">
+
+                    <label for="festival">
+                        Festival
+                    </label>
+
+                    <select
+                        id="festival"
+                        name="festival"
+                        required
+                    >
+
+                        {% for item in festivals %}
+
+                        <option value="{{ item }}">
+                            {{ item }}
+                        </option>
+
+                        {% endfor %}
+
+                    </select>
+
+                </div>
+
+
+                <!-- HOLIDAY -->
+
+                <div class="form-group">
+
+                    <label for="holiday">
+                        Holiday
+                    </label>
+
+                    <select
+                        id="holiday"
+                        name="holiday"
+                        required
+                    >
+
+                        <option value="0">
+                            No
+                        </option>
+
+                        <option value="1">
+                            Yes
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- PREDICTION DATE -->
+            <!-- ================================================= -->
+
+            <div class="section-heading">
+
+                <span class="section-icon">
+                    🗓
+                </span>
+
+                <div>
+
+                    <h2>
+                        Prediction Date
+                    </h2>
+
+                    <p>
+                        Select the date for price prediction
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-grid three-columns">
+
+
+                <!-- DAY -->
+
+                <div class="form-group">
+
+                    <label for="day">
+                        Day
+                    </label>
+
+                    <input
+                        id="day"
+                        type="number"
+                        name="day"
+                        min="1"
+                        max="31"
+                        value="13"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- MONTH -->
+
+                <div class="form-group">
+
+                    <label for="month">
+                        Month
+                    </label>
+
+                    <input
+                        id="month"
+                        type="number"
+                        name="month"
+                        min="1"
+                        max="12"
+                        value="8"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- YEAR -->
+
+                <div class="form-group">
+
+                    <label for="year">
+                        Year
+                    </label>
+
+                    <input
+                        id="year"
+                        type="number"
+                        name="year"
+                        min="2023"
+                        value="2026"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- AUTOMATIC FEATURES INFO -->
+            <!-- ================================================= -->
+
+            <div class="auto-feature-note">
+
+                <div class="note-icon">
+                    🤖
+                </div>
+
+                <div>
+
+                    <strong>
+                        Automatic Historical Price Features
+                    </strong>
+
+                    <p>
+                        Lag 1, Lag 2, Lag 3, 7-Day Rolling Average
+                        and 30-Day Rolling Average are automatically
+                        calculated from historical market data.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- SUBMIT -->
+            <!-- ================================================= -->
+
+            <button
+                type="submit"
+                class="predict-button"
+            >
+
+                🔮 Predict Agricultural Price
+
+            </button>
+
+
+        </form>
+
+    </div>
+
+
+    <!-- ===================================================== -->
+    <!-- FOOTER -->
+    <!-- ===================================================== -->
+
+    <div class="page-footer">
+
+        <p>
+            Farmer's Price Intelligence System
+            • XGBoost Machine Learning
+            • Historical Market Analysis
+        </p>
+
+    </div>
+
+
+</div>
+
+
+</body>
+
+</html>

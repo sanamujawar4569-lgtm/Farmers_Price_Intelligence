@@ -1,0 +1,35 @@
+{
+    "features": [
+        "State",
+        "Commodity_Group",
+        "Commodity",
+        "Arrival",
+        "District",
+        "Max_Temp",
+        "Min_Temp",
+        "Rainfall_mm",
+        "WindSpeed",
+        "Festival",
+        "Holiday",
+        "Month",
+        "Year",
+        "Day",
+        "Weekend",
+        "DayOfWeek",
+        "Quarter",
+        "Lag_1",
+        "Lag_2",
+        "Lag_3",
+        "Rolling_7",
+        "Rolling_30"
+    ],
+    "target": "Modal_Price",
+    "categorical_columns": [
+        "State",
+        "Commodity_Group",
+        "Commodity",
+        "District",
+        "Festival"
+    ],
+    "model": "Tuned XGBoost"
+}

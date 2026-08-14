@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Archived / old models
+archive_old_models/
+
+# Old models not used by Flask
+models/price_prediction_model.pkl
+models/xgboost_improved.pkl
+models/xgboost_onion_price_forecaster.pkl
+models/xgboost_weather.pkl
+models/label_encoders.pkl
+
+# Raw datasets
+data/raw/*.csv
+
+# Large generated CSV outputs
+outputs/*.csv
+
+# Secrets
+.env
+*.env
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store                                                                                                                              
+
+# Backup files
+*_backup.py
+*_backup.css
+*_backup.html
+*_backup.*

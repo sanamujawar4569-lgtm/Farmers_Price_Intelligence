@@ -1,0 +1,655 @@
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(
+        135deg,
+        #238b57 0%,
+        #35a967 50%,
+        #21884f 100%
+    );
+    min-height: 100vh;
+    color: #17351f;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   COMMON
+========================================================= */
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+button,
+input,
+select {
+    font-family: inherit;
+}
+
+
+/* =========================================================
+   HOME PAGE
+========================================================= */
+
+.container {
+    width: min(1180px, 94%);
+    margin: 35px auto;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 24px;
+    padding: 35px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================================
+   HOME TITLE
+========================================================= */
+
+.card h1 {
+    color: #145c32;
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #64756a;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px 22px;
+}
+
+
+/* =========================================================
+   FORM SECTION HEADINGS
+========================================================= */
+
+form h2 {
+    grid-column: 1 / -1;
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding: 14px 18px;
+    border-radius: 14px;
+    background: #edf8f0;
+    color: #145c32;
+    font-size: 20px;
+    border-left: 5px solid #218344;
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+form label {
+    display: block;
+    color: #285a39;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+
+/* =========================================================
+   INPUT / SELECT
+========================================================= */
+
+form input,
+form select {
+    width: 100%;
+    min-height: 44px;
+    padding: 11px 13px;
+    border: 1px solid #c7d8cc;
+    border-radius: 11px;
+    background: #ffffff;
+    color: #17351f;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+form input:hover,
+form select:hover {
+    border-color: #7eb292;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #218344;
+    box-shadow: 0 0 0 4px rgba(33, 131, 68, 0.12);
+}
+
+
+/* =========================================================
+   DATE ROW
+========================================================= */
+
+.row {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.row > div {
+    min-width: 0;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+form button {
+    grid-column: 1 / -1;
+    margin-top: 10px;
+    min-height: 52px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(
+        135deg,
+        #18713d,
+        #229653
+    );
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(24, 113, 61, 0.25);
+    transition: all 0.2s ease;
+}
+
+form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(24, 113, 61, 0.30);
+}
+
+form button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   RESULT DASHBOARD
+========================================================= */
+
+.dashboard {
+    width: min(1250px, 94%);
+    margin: 30px auto;
+}
+
+
+/* =========================================================
+   DASHBOARD HEADER
+========================================================= */
+
+.dashboard-header {
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 24px;
+    padding: 30px 35px;
+    margin-bottom: 22px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
+}
+
+.dashboard-header h1 {
+    color: #145c32;
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 800;
+    margin-bottom: 7px;
+}
+
+.dashboard-header p {
+    color: #63756a;
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   MARKET BANNER
+========================================================= */
+
+.market-banner {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin-bottom: 22px;
+}
+
+.market-banner div {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 22px 26px;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+}
+
+.market-banner span {
+    display: block;
+    color: #6b7b70;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.market-banner strong {
+    color: #17351f;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   TOP RESULT CARDS
+========================================================= */
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    align-items: stretch;
+}
+
+.dashboard-card {
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 26px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+    min-width: 0;
+}
+
+.prediction-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 290px;
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.card-title {
+    color: #183c25;
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.big-price {
+    color: #187c42;
+    font-size: clamp(38px, 5vw, 55px);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-top: 10px;
+}
+
+.price-label {
+    color: #68796f;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.model-label {
+    margin-top: 18px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    background: #e8f7ec;
+    color: #245a36;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   METRICS
+========================================================= */
+
+.metric {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 13px 0;
+    border-bottom: 1px solid #e4ece7;
+}
+
+.metric:last-child {
+    border-bottom: none;
+}
+
+.metric span {
+    color: #65766b;
+    font-size: 15px;
+}
+
+.metric strong {
+    color: #193d27;
+    text-align: right;
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   RECOMMENDATION
+========================================================= */
+
+.recommendation-box {
+    background: #ffffff;
+    margin-top: 22px;
+    padding: 28px;
+    border-radius: 22px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+.recommendation-box p {
+    color: #24412d;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.action-badge {
+    background: #eaf8ee;
+    color: #1d4930;
+    border-left: 6px solid #218344;
+    border-radius: 12px;
+    padding: 15px 17px;
+    font-size: 16px;
+}
+
+.action-badge strong {
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   FORECAST SECTION
+========================================================= */
+
+.forecast-section {
+    background: #ffffff;
+    margin-top: 22px;
+    padding: 28px;
+    border-radius: 22px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   FORECAST SUMMARY CARDS
+========================================================= */
+
+.forecast-summary {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.forecast-summary-card {
+    background: #eef8f1;
+    border-radius: 14px;
+    padding: 16px;
+}
+
+.forecast-summary-card span {
+    display: block;
+    color: #64766b;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.forecast-summary-card strong {
+    color: #19482b;
+    font-size: 21px;
+}
+
+
+/* =========================================================
+   FORECAST TABLE
+========================================================= */
+
+.forecast-table-wrapper {
+    max-height: 420px;
+    overflow-y: auto;
+    overflow-x: auto;
+    border: 1px solid #e1ebe4;
+    border-radius: 12px;
+}
+
+.forecast-table {
+    width: 100%;
+    min-width: 520px;
+    border-collapse: collapse;
+}
+
+.forecast-table th {
+    background: #eaf6ed;
+    color: #173d25;
+    padding: 14px;
+    text-align: left;
+    font-size: 14px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.forecast-table td {
+    padding: 13px 14px;
+    color: #354b3c;
+    border-bottom: 1px solid #e7eee9;
+    font-size: 14px;
+}
+
+.forecast-table tbody tr:hover {
+    background: #f5faf6;
+}
+
+
+/* =========================================================
+   DECISION SUMMARY
+========================================================= */
+
+.decision-card {
+    margin-top: 22px;
+}
+
+
+/* =========================================================
+   BOTTOM ACTION
+========================================================= */
+
+.bottom-actions {
+    text-align: center;
+    margin: 28px 0 35px;
+}
+
+.new-prediction-btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #ffffff;
+    color: #18713d;
+    padding: 13px 24px;
+    border-radius: 13px;
+    font-size: 15px;
+    font-weight: 800;
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.13);
+    transition: 0.2s ease;
+}
+
+.new-prediction-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   ERROR PAGE
+========================================================= */
+
+.dashboard-card p {
+    color: #53665a;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+.forecast-table-wrapper::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+}
+
+.forecast-table-wrapper::-webkit-scrollbar-track {
+    background: #edf3ef;
+    border-radius: 10px;
+}
+
+.forecast-table-wrapper::-webkit-scrollbar-thumb {
+    background: #83ad91;
+    border-radius: 10px;
+}
+
+.forecast-table-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #5d956d;
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .dashboard-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    .row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .container,
+    .dashboard {
+        width: 94%;
+        margin: 15px auto;
+    }
+
+    .card,
+    .dashboard-header,
+    .dashboard-card,
+    .recommendation-box,
+    .forecast-section {
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+    .market-banner {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .forecast-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .row {
+        grid-template-columns: 1fr;
+    }
+
+    .card h1,
+    .dashboard-header h1 {
+        font-size: 28px;
+    }
+
+    .big-price {
+        font-size: 38px;
+    }
+
+    .metric {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .metric strong {
+        text-align: left;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL SCREEN
+========================================================= */
+
+@media (max-width: 450px) {
+
+    .card h1,
+    .dashboard-header h1 {
+        font-size: 24px;
+    }
+
+    .card-title {
+        font-size: 19px;
+    }
+
+    .big-price {
+        font-size: 34px;
+    }
+
+    .market-banner strong {
+        font-size: 20px;
+    }
+}
