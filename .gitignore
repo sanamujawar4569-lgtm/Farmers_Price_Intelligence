@@ -20,13 +20,20 @@ models/xgboost_improved.pkl
 models/xgboost_onion_price_forecaster.pkl
 models/xgboost_weather.pkl
 models/label_encoders.pkl
-
 # Raw datasets
 data/raw/*.csv
 
-# Large generated CSV outputs
+# Flask runtime dataset
+!data/raw/final_dataset_phase5.csv
+
+# Generated CSV outputs
 outputs/*.csv
 
+# Flask runtime outputs
+!outputs/final_farmer_intelligence.csv
+!outputs/farmer_recommendations.csv
+!outputs/district_mandi_intelligence.csv
+!outputs/xgboost_30_day_price_forecast.csv
 # Secrets
 .env
 *.env

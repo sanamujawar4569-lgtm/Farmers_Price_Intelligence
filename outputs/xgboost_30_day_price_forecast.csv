@@ -1,0 +1,1501 @@
+Date,Commodity,District,Predicted_Price
+2026-08-14,Onion,Ahmednagar,1614.54
+2026-08-15,Onion,Ahmednagar,1546.19
+2026-08-16,Onion,Ahmednagar,1498.09
+2026-08-17,Onion,Ahmednagar,1534.16
+2026-08-18,Onion,Ahmednagar,1545.77
+2026-08-19,Onion,Ahmednagar,1535.01
+2026-08-20,Onion,Ahmednagar,1527.04
+2026-08-21,Onion,Ahmednagar,1528.9
+2026-08-22,Onion,Ahmednagar,1469.15
+2026-08-23,Onion,Ahmednagar,1464.49
+2026-08-24,Onion,Ahmednagar,1505.06
+2026-08-25,Onion,Ahmednagar,1511.73
+2026-08-26,Onion,Ahmednagar,1504.23
+2026-08-27,Onion,Ahmednagar,1453.08
+2026-08-28,Onion,Ahmednagar,1428.49
+2026-08-29,Onion,Ahmednagar,1366.87
+2026-08-30,Onion,Ahmednagar,1361.54
+2026-08-31,Onion,Ahmednagar,1366.39
+2026-09-01,Onion,Ahmednagar,1426.71
+2026-09-02,Onion,Ahmednagar,1474.03
+2026-09-03,Onion,Ahmednagar,1491.46
+2026-09-04,Onion,Ahmednagar,1521.74
+2026-09-05,Onion,Ahmednagar,1480.33
+2026-09-06,Onion,Ahmednagar,1475.06
+2026-09-07,Onion,Ahmednagar,1553.74
+2026-09-08,Onion,Ahmednagar,1551.86
+2026-09-09,Onion,Ahmednagar,1541.8
+2026-09-10,Onion,Ahmednagar,1549.96
+2026-09-11,Onion,Ahmednagar,1540.1
+2026-09-12,Onion,Ahmednagar,1484.87
+2026-08-14,Onion,Chhatrapati Sambhajinagar,1616.31
+2026-08-15,Onion,Chhatrapati Sambhajinagar,1547.95
+2026-08-16,Onion,Chhatrapati Sambhajinagar,1499.85
+2026-08-17,Onion,Chhatrapati Sambhajinagar,1535.21
+2026-08-18,Onion,Chhatrapati Sambhajinagar,1547.85
+2026-08-19,Onion,Chhatrapati Sambhajinagar,1537.1
+2026-08-20,Onion,Chhatrapati Sambhajinagar,1529.12
+2026-08-21,Onion,Chhatrapati Sambhajinagar,1530.67
+2026-08-22,Onion,Chhatrapati Sambhajinagar,1470.92
+2026-08-23,Onion,Chhatrapati Sambhajinagar,1466.26
+2026-08-24,Onion,Chhatrapati Sambhajinagar,1506.11
+2026-08-25,Onion,Chhatrapati Sambhajinagar,1524.6
+2026-08-26,Onion,Chhatrapati Sambhajinagar,1506.32
+2026-08-27,Onion,Chhatrapati Sambhajinagar,1485.83
+2026-08-28,Onion,Chhatrapati Sambhajinagar,1453.18
+2026-08-29,Onion,Chhatrapati Sambhajinagar,1373.48
+2026-08-30,Onion,Chhatrapati Sambhajinagar,1385.83
+2026-08-31,Onion,Chhatrapati Sambhajinagar,1433.63
+2026-09-01,Onion,Chhatrapati Sambhajinagar,1525.62
+2026-09-02,Onion,Chhatrapati Sambhajinagar,1534.2
+2026-09-03,Onion,Chhatrapati Sambhajinagar,1572.56
+2026-09-04,Onion,Chhatrapati Sambhajinagar,1596.23
+2026-09-05,Onion,Chhatrapati Sambhajinagar,1534.15
+2026-09-06,Onion,Chhatrapati Sambhajinagar,1521.34
+2026-09-07,Onion,Chhatrapati Sambhajinagar,1598.16
+2026-09-08,Onion,Chhatrapati Sambhajinagar,1628.08
+2026-09-09,Onion,Chhatrapati Sambhajinagar,1649.68
+2026-09-10,Onion,Chhatrapati Sambhajinagar,1662.91
+2026-09-11,Onion,Chhatrapati Sambhajinagar,1665.59
+2026-09-12,Onion,Chhatrapati Sambhajinagar,1602.18
+2026-08-14,Onion,Jalgaon,1614.67
+2026-08-15,Onion,Jalgaon,1546.31
+2026-08-16,Onion,Jalgaon,1498.21
+2026-08-17,Onion,Jalgaon,1534.28
+2026-08-18,Onion,Jalgaon,1545.89
+2026-08-19,Onion,Jalgaon,1535.13
+2026-08-20,Onion,Jalgaon,1527.16
+2026-08-21,Onion,Jalgaon,1529.02
+2026-08-22,Onion,Jalgaon,1469.27
+2026-08-23,Onion,Jalgaon,1464.61
+2026-08-24,Onion,Jalgaon,1505.18
+2026-08-25,Onion,Jalgaon,1521.13
+2026-08-26,Onion,Jalgaon,1504.35
+2026-08-27,Onion,Jalgaon,1454.84
+2026-08-28,Onion,Jalgaon,1428.61
+2026-08-29,Onion,Jalgaon,1367.0
+2026-08-30,Onion,Jalgaon,1361.66
+2026-08-31,Onion,Jalgaon,1366.51
+2026-09-01,Onion,Jalgaon,1426.84
+2026-09-02,Onion,Jalgaon,1473.76
+2026-09-03,Onion,Jalgaon,1491.2
+2026-09-04,Onion,Jalgaon,1521.87
+2026-09-05,Onion,Jalgaon,1480.45
+2026-09-06,Onion,Jalgaon,1475.19
+2026-09-07,Onion,Jalgaon,1553.87
+2026-09-08,Onion,Jalgaon,1551.98
+2026-09-09,Onion,Jalgaon,1541.93
+2026-09-10,Onion,Jalgaon,1550.08
+2026-09-11,Onion,Jalgaon,1540.23
+2026-09-12,Onion,Jalgaon,1484.99
+2026-08-14,Onion,Kolhapur,1611.78
+2026-08-15,Onion,Kolhapur,1542.75
+2026-08-16,Onion,Kolhapur,1494.56
+2026-08-17,Onion,Kolhapur,1531.27
+2026-08-18,Onion,Kolhapur,1543.42
+2026-08-19,Onion,Kolhapur,1532.66
+2026-08-20,Onion,Kolhapur,1524.88
+2026-08-21,Onion,Kolhapur,1526.73
+2026-08-22,Onion,Kolhapur,1450.44
+2026-08-23,Onion,Kolhapur,1424.61
+2026-08-24,Onion,Kolhapur,1442.48
+2026-08-25,Onion,Kolhapur,1436.5
+2026-08-26,Onion,Kolhapur,1415.98
+2026-08-27,Onion,Kolhapur,1393.82
+2026-08-28,Onion,Kolhapur,1383.92
+2026-08-29,Onion,Kolhapur,1324.17
+2026-08-30,Onion,Kolhapur,1313.22
+2026-08-31,Onion,Kolhapur,1329.56
+2026-09-01,Onion,Kolhapur,1386.92
+2026-09-02,Onion,Kolhapur,1439.58
+2026-09-03,Onion,Kolhapur,1439.05
+2026-09-04,Onion,Kolhapur,1448.12
+2026-09-05,Onion,Kolhapur,1375.69
+2026-09-06,Onion,Kolhapur,1354.97
+2026-09-07,Onion,Kolhapur,1436.02
+2026-09-08,Onion,Kolhapur,1509.5
+2026-09-09,Onion,Kolhapur,1479.49
+2026-09-10,Onion,Kolhapur,1491.53
+2026-09-11,Onion,Kolhapur,1503.7
+2026-09-12,Onion,Kolhapur,1441.57
+2026-08-14,Onion,Nagpur,1611.51
+2026-08-15,Onion,Nagpur,1543.25
+2026-08-16,Onion,Nagpur,1500.28
+2026-08-17,Onion,Nagpur,1527.83
+2026-08-18,Onion,Nagpur,1541.29
+2026-08-19,Onion,Nagpur,1533.77
+2026-08-20,Onion,Nagpur,1525.96
+2026-08-21,Onion,Nagpur,1527.82
+2026-08-22,Onion,Nagpur,1450.58
+2026-08-23,Onion,Nagpur,1432.4
+2026-08-24,Onion,Nagpur,1441.12
+2026-08-25,Onion,Nagpur,1436.05
+2026-08-26,Onion,Nagpur,1413.68
+2026-08-27,Onion,Nagpur,1391.67
+2026-08-28,Onion,Nagpur,1376.51
+2026-08-29,Onion,Nagpur,1294.57
+2026-08-30,Onion,Nagpur,1282.98
+2026-08-31,Onion,Nagpur,1312.93
+2026-09-01,Onion,Nagpur,1347.73
+2026-09-02,Onion,Nagpur,1415.82
+2026-09-03,Onion,Nagpur,1455.56
+2026-09-04,Onion,Nagpur,1461.01
+2026-09-05,Onion,Nagpur,1419.18
+2026-09-06,Onion,Nagpur,1418.42
+2026-09-07,Onion,Nagpur,1466.01
+2026-09-08,Onion,Nagpur,1473.12
+2026-09-09,Onion,Nagpur,1490.71
+2026-09-10,Onion,Nagpur,1494.61
+2026-09-11,Onion,Nagpur,1509.61
+2026-09-12,Onion,Nagpur,1468.86
+2026-08-14,Onion,Nashik,1614.54
+2026-08-15,Onion,Nashik,1546.19
+2026-08-16,Onion,Nashik,1498.09
+2026-08-17,Onion,Nashik,1534.16
+2026-08-18,Onion,Nashik,1545.77
+2026-08-19,Onion,Nashik,1535.01
+2026-08-20,Onion,Nashik,1527.04
+2026-08-21,Onion,Nashik,1528.9
+2026-08-22,Onion,Nashik,1469.15
+2026-08-23,Onion,Nashik,1464.49
+2026-08-24,Onion,Nashik,1505.06
+2026-08-25,Onion,Nashik,1511.73
+2026-08-26,Onion,Nashik,1504.23
+2026-08-27,Onion,Nashik,1453.08
+2026-08-28,Onion,Nashik,1428.49
+2026-08-29,Onion,Nashik,1366.87
+2026-08-30,Onion,Nashik,1361.54
+2026-08-31,Onion,Nashik,1366.39
+2026-09-01,Onion,Nashik,1426.71
+2026-09-02,Onion,Nashik,1474.03
+2026-09-03,Onion,Nashik,1491.46
+2026-09-04,Onion,Nashik,1521.74
+2026-09-05,Onion,Nashik,1480.33
+2026-09-06,Onion,Nashik,1475.06
+2026-09-07,Onion,Nashik,1553.74
+2026-09-08,Onion,Nashik,1551.86
+2026-09-09,Onion,Nashik,1541.8
+2026-09-10,Onion,Nashik,1549.96
+2026-09-11,Onion,Nashik,1540.1
+2026-09-12,Onion,Nashik,1484.87
+2026-08-14,Onion,Pune,1614.54
+2026-08-15,Onion,Pune,1545.64
+2026-08-16,Onion,Pune,1497.55
+2026-08-17,Onion,Pune,1534.16
+2026-08-18,Onion,Pune,1545.77
+2026-08-19,Onion,Pune,1535.01
+2026-08-20,Onion,Pune,1527.04
+2026-08-21,Onion,Pune,1528.9
+2026-08-22,Onion,Pune,1468.61
+2026-08-23,Onion,Pune,1463.95
+2026-08-24,Onion,Pune,1505.06
+2026-08-25,Onion,Pune,1511.73
+2026-08-26,Onion,Pune,1504.23
+2026-08-27,Onion,Pune,1453.08
+2026-08-28,Onion,Pune,1428.49
+2026-08-29,Onion,Pune,1366.33
+2026-08-30,Onion,Pune,1361.0
+2026-08-31,Onion,Pune,1366.39
+2026-09-01,Onion,Pune,1426.71
+2026-09-02,Onion,Pune,1473.64
+2026-09-03,Onion,Pune,1491.07
+2026-09-04,Onion,Pune,1521.74
+2026-09-05,Onion,Pune,1479.79
+2026-09-06,Onion,Pune,1474.52
+2026-09-07,Onion,Pune,1553.74
+2026-09-08,Onion,Pune,1551.86
+2026-09-09,Onion,Pune,1541.8
+2026-09-10,Onion,Pune,1549.96
+2026-09-11,Onion,Pune,1540.1
+2026-09-12,Onion,Pune,1484.33
+2026-08-14,Onion,Sangli,1607.32
+2026-08-15,Onion,Sangli,1508.78
+2026-08-16,Onion,Sangli,1496.83
+2026-08-17,Onion,Sangli,1522.05
+2026-08-18,Onion,Sangli,1540.2
+2026-08-19,Onion,Sangli,1532.68
+2026-08-20,Onion,Sangli,1524.71
+2026-08-21,Onion,Sangli,1526.57
+2026-08-22,Onion,Sangli,1450.81
+2026-08-23,Onion,Sangli,1427.55
+2026-08-24,Onion,Sangli,1439.08
+2026-08-25,Onion,Sangli,1432.58
+2026-08-26,Onion,Sangli,1410.26
+2026-08-27,Onion,Sangli,1380.22
+2026-08-28,Onion,Sangli,1344.89
+2026-08-29,Onion,Sangli,1292.39
+2026-08-30,Onion,Sangli,1275.15
+2026-08-31,Onion,Sangli,1264.81
+2026-09-01,Onion,Sangli,1344.25
+2026-09-02,Onion,Sangli,1394.34
+2026-09-03,Onion,Sangli,1439.0
+2026-09-04,Onion,Sangli,1438.05
+2026-09-05,Onion,Sangli,1378.86
+2026-09-06,Onion,Sangli,1345.25
+2026-09-07,Onion,Sangli,1416.82
+2026-09-08,Onion,Sangli,1482.29
+2026-09-09,Onion,Sangli,1448.48
+2026-09-10,Onion,Sangli,1463.44
+2026-09-11,Onion,Sangli,1471.55
+2026-09-12,Onion,Sangli,1435.52
+2026-08-14,Onion,Satara,1607.01
+2026-08-15,Onion,Satara,1508.34
+2026-08-16,Onion,Satara,1493.91
+2026-08-17,Onion,Satara,1521.62
+2026-08-18,Onion,Satara,1539.69
+2026-08-19,Onion,Satara,1532.17
+2026-08-20,Onion,Satara,1524.2
+2026-08-21,Onion,Satara,1526.05
+2026-08-22,Onion,Satara,1450.29
+2026-08-23,Onion,Satara,1424.55
+2026-08-24,Onion,Satara,1438.57
+2026-08-25,Onion,Satara,1430.62
+2026-08-26,Onion,Satara,1409.75
+2026-08-27,Onion,Satara,1379.71
+2026-08-28,Onion,Satara,1344.37
+2026-08-29,Onion,Satara,1291.87
+2026-08-30,Onion,Satara,1308.8
+2026-08-31,Onion,Satara,1279.3
+2026-09-01,Onion,Satara,1356.02
+2026-09-02,Onion,Satara,1401.28
+2026-09-03,Onion,Satara,1445.02
+2026-09-04,Onion,Satara,1437.56
+2026-09-05,Onion,Satara,1366.81
+2026-09-06,Onion,Satara,1343.29
+2026-09-07,Onion,Satara,1416.72
+2026-09-08,Onion,Satara,1416.73
+2026-09-09,Onion,Satara,1402.56
+2026-09-10,Onion,Satara,1411.65
+2026-09-11,Onion,Satara,1427.09
+2026-09-12,Onion,Satara,1353.21
+2026-08-14,Onion,Solapur,1621.27
+2026-08-15,Onion,Solapur,1551.61
+2026-08-16,Onion,Solapur,1505.63
+2026-08-17,Onion,Solapur,1557.71
+2026-08-18,Onion,Solapur,1598.12
+2026-08-19,Onion,Solapur,1587.74
+2026-08-20,Onion,Solapur,1582.16
+2026-08-21,Onion,Solapur,1578.97
+2026-08-22,Onion,Solapur,1518.67
+2026-08-23,Onion,Solapur,1503.17
+2026-08-24,Onion,Solapur,1533.18
+2026-08-25,Onion,Solapur,1544.52
+2026-08-26,Onion,Solapur,1530.87
+2026-08-27,Onion,Solapur,1510.52
+2026-08-28,Onion,Solapur,1505.14
+2026-08-29,Onion,Solapur,1438.8
+2026-08-30,Onion,Solapur,1438.55
+2026-08-31,Onion,Solapur,1441.32
+2026-09-01,Onion,Solapur,1483.88
+2026-09-02,Onion,Solapur,1516.1
+2026-09-03,Onion,Solapur,1570.04
+2026-09-04,Onion,Solapur,1602.74
+2026-09-05,Onion,Solapur,1534.87
+2026-09-06,Onion,Solapur,1527.59
+2026-09-07,Onion,Solapur,1585.96
+2026-09-08,Onion,Solapur,1624.36
+2026-09-09,Onion,Solapur,1641.16
+2026-09-10,Onion,Solapur,1664.18
+2026-09-11,Onion,Solapur,1669.29
+2026-09-12,Onion,Solapur,1636.26
+2026-08-14,Potato,Ahmednagar,1048.73
+2026-08-15,Potato,Ahmednagar,961.28
+2026-08-16,Potato,Ahmednagar,1009.91
+2026-08-17,Potato,Ahmednagar,1020.14
+2026-08-18,Potato,Ahmednagar,1053.82
+2026-08-19,Potato,Ahmednagar,1063.26
+2026-08-20,Potato,Ahmednagar,1092.91
+2026-08-21,Potato,Ahmednagar,1144.26
+2026-08-22,Potato,Ahmednagar,1072.36
+2026-08-23,Potato,Ahmednagar,1081.45
+2026-08-24,Potato,Ahmednagar,1127.36
+2026-08-25,Potato,Ahmednagar,1158.15
+2026-08-26,Potato,Ahmednagar,1155.49
+2026-08-27,Potato,Ahmednagar,1159.06
+2026-08-28,Potato,Ahmednagar,1170.26
+2026-08-29,Potato,Ahmednagar,1139.48
+2026-08-30,Potato,Ahmednagar,1167.17
+2026-08-31,Potato,Ahmednagar,1218.04
+2026-09-01,Potato,Ahmednagar,1247.92
+2026-09-02,Potato,Ahmednagar,1324.13
+2026-09-03,Potato,Ahmednagar,1367.69
+2026-09-04,Potato,Ahmednagar,1397.09
+2026-09-05,Potato,Ahmednagar,1351.49
+2026-09-06,Potato,Ahmednagar,1371.32
+2026-09-07,Potato,Ahmednagar,1416.53
+2026-09-08,Potato,Ahmednagar,1479.49
+2026-09-09,Potato,Ahmednagar,1504.39
+2026-09-10,Potato,Ahmednagar,1517.92
+2026-09-11,Potato,Ahmednagar,1532.13
+2026-09-12,Potato,Ahmednagar,1458.56
+2026-08-14,Potato,Chhatrapati Sambhajinagar,1050.5
+2026-08-15,Potato,Chhatrapati Sambhajinagar,963.04
+2026-08-16,Potato,Chhatrapati Sambhajinagar,1011.68
+2026-08-17,Potato,Chhatrapati Sambhajinagar,1021.19
+2026-08-18,Potato,Chhatrapati Sambhajinagar,1055.91
+2026-08-19,Potato,Chhatrapati Sambhajinagar,1065.35
+2026-08-20,Potato,Chhatrapati Sambhajinagar,1094.99
+2026-08-21,Potato,Chhatrapati Sambhajinagar,1146.02
+2026-08-22,Potato,Chhatrapati Sambhajinagar,1074.13
+2026-08-23,Potato,Chhatrapati Sambhajinagar,1083.22
+2026-08-24,Potato,Chhatrapati Sambhajinagar,1129.66
+2026-08-25,Potato,Chhatrapati Sambhajinagar,1160.23
+2026-08-26,Potato,Chhatrapati Sambhajinagar,1157.58
+2026-08-27,Potato,Chhatrapati Sambhajinagar,1161.14
+2026-08-28,Potato,Chhatrapati Sambhajinagar,1172.02
+2026-08-29,Potato,Chhatrapati Sambhajinagar,1142.05
+2026-08-30,Potato,Chhatrapati Sambhajinagar,1168.94
+2026-08-31,Potato,Chhatrapati Sambhajinagar,1219.09
+2026-09-01,Potato,Chhatrapati Sambhajinagar,1248.1
+2026-09-02,Potato,Chhatrapati Sambhajinagar,1323.34
+2026-09-03,Potato,Chhatrapati Sambhajinagar,1367.87
+2026-09-04,Potato,Chhatrapati Sambhajinagar,1397.28
+2026-09-05,Potato,Chhatrapati Sambhajinagar,1351.67
+2026-09-06,Potato,Chhatrapati Sambhajinagar,1372.08
+2026-09-07,Potato,Chhatrapati Sambhajinagar,1418.55
+2026-09-08,Potato,Chhatrapati Sambhajinagar,1480.58
+2026-09-09,Potato,Chhatrapati Sambhajinagar,1505.47
+2026-09-10,Potato,Chhatrapati Sambhajinagar,1540.66
+2026-09-11,Potato,Chhatrapati Sambhajinagar,1531.12
+2026-09-12,Potato,Chhatrapati Sambhajinagar,1464.44
+2026-08-14,Potato,Jalgaon,1048.85
+2026-08-15,Potato,Jalgaon,961.4
+2026-08-16,Potato,Jalgaon,1010.03
+2026-08-17,Potato,Jalgaon,1020.26
+2026-08-18,Potato,Jalgaon,1053.95
+2026-08-19,Potato,Jalgaon,1063.39
+2026-08-20,Potato,Jalgaon,1093.03
+2026-08-21,Potato,Jalgaon,1144.38
+2026-08-22,Potato,Jalgaon,1072.49
+2026-08-23,Potato,Jalgaon,1080.63
+2026-08-24,Potato,Jalgaon,1126.54
+2026-08-25,Potato,Jalgaon,1157.33
+2026-08-26,Potato,Jalgaon,1154.68
+2026-08-27,Potato,Jalgaon,1158.24
+2026-08-28,Potato,Jalgaon,1169.44
+2026-08-29,Potato,Jalgaon,1138.67
+2026-08-30,Potato,Jalgaon,1166.36
+2026-08-31,Potato,Jalgaon,1217.22
+2026-09-01,Potato,Jalgaon,1238.55
+2026-09-02,Potato,Jalgaon,1313.09
+2026-09-03,Potato,Jalgaon,1348.27
+2026-09-04,Potato,Jalgaon,1377.52
+2026-09-05,Potato,Jalgaon,1321.56
+2026-09-06,Potato,Jalgaon,1347.29
+2026-09-07,Potato,Jalgaon,1434.99
+2026-09-08,Potato,Jalgaon,1473.72
+2026-09-09,Potato,Jalgaon,1517.83
+2026-09-10,Potato,Jalgaon,1521.33
+2026-09-11,Potato,Jalgaon,1533.47
+2026-09-12,Potato,Jalgaon,1457.85
+2026-08-14,Potato,Kolhapur,1053.32
+2026-08-15,Potato,Kolhapur,966.52
+2026-08-16,Potato,Kolhapur,1014.51
+2026-08-17,Potato,Kolhapur,1024.6
+2026-08-18,Potato,Kolhapur,1058.21
+2026-08-19,Potato,Kolhapur,1067.65
+2026-08-20,Potato,Kolhapur,1096.46
+2026-08-21,Potato,Kolhapur,1149.41
+2026-08-22,Potato,Kolhapur,1076.69
+2026-08-23,Potato,Kolhapur,1099.95
+2026-08-24,Potato,Kolhapur,1171.25
+2026-08-25,Potato,Kolhapur,1206.42
+2026-08-26,Potato,Kolhapur,1216.77
+2026-08-27,Potato,Kolhapur,1218.38
+2026-08-28,Potato,Kolhapur,1222.96
+2026-08-29,Potato,Kolhapur,1179.54
+2026-08-30,Potato,Kolhapur,1235.08
+2026-08-31,Potato,Kolhapur,1256.19
+2026-09-01,Potato,Kolhapur,1301.94
+2026-09-02,Potato,Kolhapur,1352.17
+2026-09-03,Potato,Kolhapur,1379.53
+2026-09-04,Potato,Kolhapur,1404.11
+2026-09-05,Potato,Kolhapur,1354.43
+2026-09-06,Potato,Kolhapur,1413.7
+2026-09-07,Potato,Kolhapur,1489.99
+2026-09-08,Potato,Kolhapur,1451.99
+2026-09-09,Potato,Kolhapur,1492.45
+2026-09-10,Potato,Kolhapur,1496.54
+2026-09-11,Potato,Kolhapur,1477.95
+2026-09-12,Potato,Kolhapur,1401.03
+2026-08-14,Potato,Nagpur,1057.06
+2026-08-15,Potato,Nagpur,971.69
+2026-08-16,Potato,Nagpur,1020.45
+2026-08-17,Potato,Nagpur,1033.74
+2026-08-18,Potato,Nagpur,1068.58
+2026-08-19,Potato,Nagpur,1096.58
+2026-08-20,Potato,Nagpur,1148.83
+2026-08-21,Potato,Nagpur,1153.19
+2026-08-22,Potato,Nagpur,1094.49
+2026-08-23,Potato,Nagpur,1149.47
+2026-08-24,Potato,Nagpur,1182.91
+2026-08-25,Potato,Nagpur,1222.99
+2026-08-26,Potato,Nagpur,1233.51
+2026-08-27,Potato,Nagpur,1265.55
+2026-08-28,Potato,Nagpur,1268.14
+2026-08-29,Potato,Nagpur,1206.18
+2026-08-30,Potato,Nagpur,1247.6
+2026-08-31,Potato,Nagpur,1276.3
+2026-09-01,Potato,Nagpur,1300.16
+2026-09-02,Potato,Nagpur,1352.39
+2026-09-03,Potato,Nagpur,1384.36
+2026-09-04,Potato,Nagpur,1436.66
+2026-09-05,Potato,Nagpur,1316.11
+2026-09-06,Potato,Nagpur,1350.07
+2026-09-07,Potato,Nagpur,1398.79
+2026-09-08,Potato,Nagpur,1429.39
+2026-09-09,Potato,Nagpur,1420.19
+2026-09-10,Potato,Nagpur,1425.05
+2026-09-11,Potato,Nagpur,1396.39
+2026-09-12,Potato,Nagpur,1311.57
+2026-08-14,Potato,Nashik,1048.73
+2026-08-15,Potato,Nashik,961.28
+2026-08-16,Potato,Nashik,1009.91
+2026-08-17,Potato,Nashik,1020.14
+2026-08-18,Potato,Nashik,1053.82
+2026-08-19,Potato,Nashik,1063.26
+2026-08-20,Potato,Nashik,1092.91
+2026-08-21,Potato,Nashik,1144.26
+2026-08-22,Potato,Nashik,1072.36
+2026-08-23,Potato,Nashik,1081.45
+2026-08-24,Potato,Nashik,1127.36
+2026-08-25,Potato,Nashik,1158.15
+2026-08-26,Potato,Nashik,1155.49
+2026-08-27,Potato,Nashik,1159.06
+2026-08-28,Potato,Nashik,1170.26
+2026-08-29,Potato,Nashik,1139.48
+2026-08-30,Potato,Nashik,1167.17
+2026-08-31,Potato,Nashik,1218.04
+2026-09-01,Potato,Nashik,1247.92
+2026-09-02,Potato,Nashik,1324.13
+2026-09-03,Potato,Nashik,1367.69
+2026-09-04,Potato,Nashik,1397.09
+2026-09-05,Potato,Nashik,1351.49
+2026-09-06,Potato,Nashik,1371.32
+2026-09-07,Potato,Nashik,1416.53
+2026-09-08,Potato,Nashik,1479.49
+2026-09-09,Potato,Nashik,1504.39
+2026-09-10,Potato,Nashik,1517.92
+2026-09-11,Potato,Nashik,1532.13
+2026-09-12,Potato,Nashik,1458.56
+2026-08-14,Potato,Pune,1048.73
+2026-08-15,Potato,Pune,960.73
+2026-08-16,Potato,Pune,1009.37
+2026-08-17,Potato,Pune,1020.14
+2026-08-18,Potato,Pune,1053.82
+2026-08-19,Potato,Pune,1063.26
+2026-08-20,Potato,Pune,1092.91
+2026-08-21,Potato,Pune,1144.26
+2026-08-22,Potato,Pune,1071.82
+2026-08-23,Potato,Pune,1079.97
+2026-08-24,Potato,Pune,1126.42
+2026-08-25,Potato,Pune,1157.21
+2026-08-26,Potato,Pune,1154.55
+2026-08-27,Potato,Pune,1158.12
+2026-08-28,Potato,Pune,1169.32
+2026-08-29,Potato,Pune,1138.0
+2026-08-30,Potato,Pune,1165.69
+2026-08-31,Potato,Pune,1217.1
+2026-09-01,Potato,Pune,1238.42
+2026-09-02,Potato,Pune,1312.97
+2026-09-03,Potato,Pune,1348.15
+2026-09-04,Potato,Pune,1377.4
+2026-09-05,Potato,Pune,1320.89
+2026-09-06,Potato,Pune,1346.62
+2026-09-07,Potato,Pune,1434.87
+2026-09-08,Potato,Pune,1473.6
+2026-09-09,Potato,Pune,1517.71
+2026-09-10,Potato,Pune,1521.21
+2026-09-11,Potato,Pune,1533.35
+2026-09-12,Potato,Pune,1457.19
+2026-08-14,Potato,Sangli,1058.72
+2026-08-15,Potato,Sangli,973.87
+2026-08-16,Potato,Sangli,1021.3
+2026-08-17,Potato,Sangli,1040.09
+2026-08-18,Potato,Sangli,1070.03
+2026-08-19,Potato,Sangli,1096.83
+2026-08-20,Potato,Sangli,1149.2
+2026-08-21,Potato,Sangli,1153.28
+2026-08-22,Potato,Sangli,1093.81
+2026-08-23,Potato,Sangli,1147.03
+2026-08-24,Potato,Sangli,1182.21
+2026-08-25,Potato,Sangli,1222.3
+2026-08-26,Potato,Sangli,1240.47
+2026-08-27,Potato,Sangli,1272.35
+2026-08-28,Potato,Sangli,1280.98
+2026-08-29,Potato,Sangli,1211.75
+2026-08-30,Potato,Sangli,1245.18
+2026-08-31,Potato,Sangli,1283.26
+2026-09-01,Potato,Sangli,1312.44
+2026-09-02,Potato,Sangli,1357.29
+2026-09-03,Potato,Sangli,1386.7
+2026-09-04,Potato,Sangli,1429.94
+2026-09-05,Potato,Sangli,1310.29
+2026-09-06,Potato,Sangli,1347.65
+2026-09-07,Potato,Sangli,1398.12
+2026-09-08,Potato,Sangli,1425.05
+2026-09-09,Potato,Sangli,1416.93
+2026-09-10,Potato,Sangli,1421.63
+2026-09-11,Potato,Sangli,1394.58
+2026-09-12,Potato,Sangli,1308.52
+2026-08-14,Potato,Satara,1057.8
+2026-08-15,Potato,Satara,974.15
+2026-08-16,Potato,Satara,1020.94
+2026-08-17,Potato,Satara,1039.05
+2026-08-18,Potato,Satara,1068.92
+2026-08-19,Potato,Satara,1095.71
+2026-08-20,Potato,Satara,1147.8
+2026-08-21,Potato,Satara,1153.48
+2026-08-22,Potato,Satara,1083.81
+2026-08-23,Potato,Satara,1145.66
+2026-08-24,Potato,Satara,1180.15
+2026-08-25,Potato,Satara,1220.25
+2026-08-26,Potato,Satara,1235.41
+2026-08-27,Potato,Satara,1270.29
+2026-08-28,Potato,Satara,1274.2
+2026-08-29,Potato,Satara,1211.01
+2026-08-30,Potato,Satara,1243.81
+2026-08-31,Potato,Satara,1272.38
+2026-09-01,Potato,Satara,1304.55
+2026-09-02,Potato,Satara,1355.94
+2026-09-03,Potato,Satara,1380.11
+2026-09-04,Potato,Satara,1403.51
+2026-09-05,Potato,Satara,1329.72
+2026-09-06,Potato,Satara,1353.13
+2026-09-07,Potato,Satara,1407.22
+2026-09-08,Potato,Satara,1422.57
+2026-09-09,Potato,Satara,1416.83
+2026-09-10,Potato,Satara,1421.53
+2026-09-11,Potato,Satara,1394.48
+2026-09-12,Potato,Satara,1308.42
+2026-08-14,Potato,Solapur,1053.41
+2026-08-15,Potato,Solapur,965.51
+2026-08-16,Potato,Solapur,1013.95
+2026-08-17,Potato,Solapur,1025.07
+2026-08-18,Potato,Solapur,1058.75
+2026-08-19,Potato,Solapur,1067.87
+2026-08-20,Potato,Solapur,1096.84
+2026-08-21,Potato,Solapur,1148.15
+2026-08-22,Potato,Solapur,1075.43
+2026-08-23,Potato,Solapur,1100.41
+2026-08-24,Potato,Solapur,1172.43
+2026-08-25,Potato,Solapur,1207.59
+2026-08-26,Potato,Solapur,1217.62
+2026-08-27,Potato,Solapur,1219.4
+2026-08-28,Potato,Solapur,1232.94
+2026-08-29,Potato,Solapur,1203.87
+2026-08-30,Potato,Solapur,1243.14
+2026-08-31,Potato,Solapur,1265.84
+2026-09-01,Potato,Solapur,1305.24
+2026-09-02,Potato,Solapur,1350.2
+2026-09-03,Potato,Solapur,1382.17
+2026-09-04,Potato,Solapur,1439.23
+2026-09-05,Potato,Solapur,1338.86
+2026-09-06,Potato,Solapur,1382.62
+2026-09-07,Potato,Solapur,1448.2
+2026-09-08,Potato,Solapur,1433.09
+2026-09-09,Potato,Solapur,1432.44
+2026-09-10,Potato,Solapur,1443.96
+2026-09-11,Potato,Solapur,1454.39
+2026-09-12,Potato,Solapur,1339.04
+2026-08-14,Rice,Ahmednagar,3736.79
+2026-08-15,Rice,Ahmednagar,3680.25
+2026-08-16,Rice,Ahmednagar,3363.75
+2026-08-17,Rice,Ahmednagar,3828.34
+2026-08-18,Rice,Ahmednagar,3984.96
+2026-08-19,Rice,Ahmednagar,3966.7
+2026-08-20,Rice,Ahmednagar,4069.63
+2026-08-21,Rice,Ahmednagar,4119.87
+2026-08-22,Rice,Ahmednagar,4016.21
+2026-08-23,Rice,Ahmednagar,3686.9
+2026-08-24,Rice,Ahmednagar,3844.21
+2026-08-25,Rice,Ahmednagar,4159.47
+2026-08-26,Rice,Ahmednagar,4071.09
+2026-08-27,Rice,Ahmednagar,3951.46
+2026-08-28,Rice,Ahmednagar,3577.76
+2026-08-29,Rice,Ahmednagar,3586.19
+2026-08-30,Rice,Ahmednagar,4489.46
+2026-08-31,Rice,Ahmednagar,4687.31
+2026-09-01,Rice,Ahmednagar,4678.26
+2026-09-02,Rice,Ahmednagar,4812.95
+2026-09-03,Rice,Ahmednagar,4802.63
+2026-09-04,Rice,Ahmednagar,4611.39
+2026-09-05,Rice,Ahmednagar,4529.25
+2026-09-06,Rice,Ahmednagar,4597.22
+2026-09-07,Rice,Ahmednagar,4878.2
+2026-09-08,Rice,Ahmednagar,4889.94
+2026-09-09,Rice,Ahmednagar,4705.96
+2026-09-10,Rice,Ahmednagar,4669.78
+2026-09-11,Rice,Ahmednagar,4626.71
+2026-09-12,Rice,Ahmednagar,4696.38
+2026-08-14,Rice,Chhatrapati Sambhajinagar,3752.17
+2026-08-15,Rice,Chhatrapati Sambhajinagar,3703.4
+2026-08-16,Rice,Chhatrapati Sambhajinagar,3423.13
+2026-08-17,Rice,Chhatrapati Sambhajinagar,3945.09
+2026-08-18,Rice,Chhatrapati Sambhajinagar,4059.32
+2026-08-19,Rice,Chhatrapati Sambhajinagar,3941.27
+2026-08-20,Rice,Chhatrapati Sambhajinagar,4005.74
+2026-08-21,Rice,Chhatrapati Sambhajinagar,3763.6
+2026-08-22,Rice,Chhatrapati Sambhajinagar,3932.67
+2026-08-23,Rice,Chhatrapati Sambhajinagar,4040.03
+2026-08-24,Rice,Chhatrapati Sambhajinagar,4262.01
+2026-08-25,Rice,Chhatrapati Sambhajinagar,4127.13
+2026-08-26,Rice,Chhatrapati Sambhajinagar,3762.93
+2026-08-27,Rice,Chhatrapati Sambhajinagar,3637.5
+2026-08-28,Rice,Chhatrapati Sambhajinagar,3685.47
+2026-08-29,Rice,Chhatrapati Sambhajinagar,3968.3
+2026-08-30,Rice,Chhatrapati Sambhajinagar,4774.32
+2026-08-31,Rice,Chhatrapati Sambhajinagar,4769.04
+2026-09-01,Rice,Chhatrapati Sambhajinagar,4854.46
+2026-09-02,Rice,Chhatrapati Sambhajinagar,4886.76
+2026-09-03,Rice,Chhatrapati Sambhajinagar,4711.28
+2026-09-04,Rice,Chhatrapati Sambhajinagar,4617.84
+2026-09-05,Rice,Chhatrapati Sambhajinagar,4635.64
+2026-09-06,Rice,Chhatrapati Sambhajinagar,4406.41
+2026-09-07,Rice,Chhatrapati Sambhajinagar,4805.54
+2026-09-08,Rice,Chhatrapati Sambhajinagar,4883.34
+2026-09-09,Rice,Chhatrapati Sambhajinagar,4669.08
+2026-09-10,Rice,Chhatrapati Sambhajinagar,4699.68
+2026-09-11,Rice,Chhatrapati Sambhajinagar,4659.85
+2026-09-12,Rice,Chhatrapati Sambhajinagar,4704.55
+2026-08-14,Rice,Jalgaon,3740.57
+2026-08-15,Rice,Jalgaon,3676.26
+2026-08-16,Rice,Jalgaon,3357.02
+2026-08-17,Rice,Jalgaon,3848.02
+2026-08-18,Rice,Jalgaon,4039.13
+2026-08-19,Rice,Jalgaon,3958.43
+2026-08-20,Rice,Jalgaon,3991.89
+2026-08-21,Rice,Jalgaon,3806.9
+2026-08-22,Rice,Jalgaon,3952.67
+2026-08-23,Rice,Jalgaon,4019.51
+2026-08-24,Rice,Jalgaon,4206.21
+2026-08-25,Rice,Jalgaon,4087.71
+2026-08-26,Rice,Jalgaon,4002.64
+2026-08-27,Rice,Jalgaon,3681.64
+2026-08-28,Rice,Jalgaon,3485.65
+2026-08-29,Rice,Jalgaon,3936.25
+2026-08-30,Rice,Jalgaon,4679.15
+2026-08-31,Rice,Jalgaon,4706.25
+2026-09-01,Rice,Jalgaon,4713.85
+2026-09-02,Rice,Jalgaon,4924.05
+2026-09-03,Rice,Jalgaon,4790.17
+2026-09-04,Rice,Jalgaon,4608.84
+2026-09-05,Rice,Jalgaon,4592.08
+2026-09-06,Rice,Jalgaon,4353.14
+2026-09-07,Rice,Jalgaon,4770.91
+2026-09-08,Rice,Jalgaon,4944.64
+2026-09-09,Rice,Jalgaon,4665.17
+2026-09-10,Rice,Jalgaon,4694.7
+2026-09-11,Rice,Jalgaon,4620.65
+2026-09-12,Rice,Jalgaon,4693.29
+2026-08-14,Rice,Kolhapur,3733.03
+2026-08-15,Rice,Kolhapur,3678.8
+2026-08-16,Rice,Kolhapur,3356.44
+2026-08-17,Rice,Kolhapur,3839.23
+2026-08-18,Rice,Kolhapur,4017.15
+2026-08-19,Rice,Kolhapur,3946.4
+2026-08-20,Rice,Kolhapur,3967.57
+2026-08-21,Rice,Kolhapur,4105.85
+2026-08-22,Rice,Kolhapur,4046.81
+2026-08-23,Rice,Kolhapur,3955.4
+2026-08-24,Rice,Kolhapur,3922.81
+2026-08-25,Rice,Kolhapur,3924.64
+2026-08-26,Rice,Kolhapur,3995.16
+2026-08-27,Rice,Kolhapur,4015.14
+2026-08-28,Rice,Kolhapur,3912.96
+2026-08-29,Rice,Kolhapur,3763.46
+2026-08-30,Rice,Kolhapur,4631.19
+2026-08-31,Rice,Kolhapur,4714.62
+2026-09-01,Rice,Kolhapur,4814.79
+2026-09-02,Rice,Kolhapur,4757.6
+2026-09-03,Rice,Kolhapur,4701.72
+2026-09-04,Rice,Kolhapur,4535.95
+2026-09-05,Rice,Kolhapur,4493.11
+2026-09-06,Rice,Kolhapur,4503.13
+2026-09-07,Rice,Kolhapur,4793.76
+2026-09-08,Rice,Kolhapur,4833.57
+2026-09-09,Rice,Kolhapur,4743.17
+2026-09-10,Rice,Kolhapur,4671.69
+2026-09-11,Rice,Kolhapur,4617.78
+2026-09-12,Rice,Kolhapur,4686.31
+2026-08-14,Rice,Nagpur,3737.44
+2026-08-15,Rice,Nagpur,3678.23
+2026-08-16,Rice,Nagpur,3347.84
+2026-08-17,Rice,Nagpur,3836.45
+2026-08-18,Rice,Nagpur,4009.95
+2026-08-19,Rice,Nagpur,3945.78
+2026-08-20,Rice,Nagpur,3979.78
+2026-08-21,Rice,Nagpur,4117.75
+2026-08-22,Rice,Nagpur,4056.92
+2026-08-23,Rice,Nagpur,3967.8
+2026-08-24,Rice,Nagpur,3996.13
+2026-08-25,Rice,Nagpur,3979.54
+2026-08-26,Rice,Nagpur,3995.63
+2026-08-27,Rice,Nagpur,3971.96
+2026-08-28,Rice,Nagpur,3920.11
+2026-08-29,Rice,Nagpur,3768.24
+2026-08-30,Rice,Nagpur,4648.15
+2026-08-31,Rice,Nagpur,4722.9
+2026-09-01,Rice,Nagpur,4807.29
+2026-09-02,Rice,Nagpur,4776.14
+2026-09-03,Rice,Nagpur,4724.75
+2026-09-04,Rice,Nagpur,4564.13
+2026-09-05,Rice,Nagpur,4506.29
+2026-09-06,Rice,Nagpur,4521.13
+2026-09-07,Rice,Nagpur,4779.92
+2026-09-08,Rice,Nagpur,4840.6
+2026-09-09,Rice,Nagpur,4808.03
+2026-09-10,Rice,Nagpur,4621.87
+2026-09-11,Rice,Nagpur,4638.53
+2026-09-12,Rice,Nagpur,4677.09
+2026-08-14,Rice,Nashik,3736.79
+2026-08-15,Rice,Nashik,3680.25
+2026-08-16,Rice,Nashik,3363.75
+2026-08-17,Rice,Nashik,3828.34
+2026-08-18,Rice,Nashik,3984.96
+2026-08-19,Rice,Nashik,3966.7
+2026-08-20,Rice,Nashik,4069.63
+2026-08-21,Rice,Nashik,4119.87
+2026-08-22,Rice,Nashik,4016.21
+2026-08-23,Rice,Nashik,3686.9
+2026-08-24,Rice,Nashik,3844.21
+2026-08-25,Rice,Nashik,4159.47
+2026-08-26,Rice,Nashik,4071.09
+2026-08-27,Rice,Nashik,3951.46
+2026-08-28,Rice,Nashik,3577.76
+2026-08-29,Rice,Nashik,3586.19
+2026-08-30,Rice,Nashik,4489.46
+2026-08-31,Rice,Nashik,4687.31
+2026-09-01,Rice,Nashik,4678.26
+2026-09-02,Rice,Nashik,4812.95
+2026-09-03,Rice,Nashik,4802.63
+2026-09-04,Rice,Nashik,4611.39
+2026-09-05,Rice,Nashik,4529.25
+2026-09-06,Rice,Nashik,4597.22
+2026-09-07,Rice,Nashik,4878.2
+2026-09-08,Rice,Nashik,4889.94
+2026-09-09,Rice,Nashik,4705.96
+2026-09-10,Rice,Nashik,4669.78
+2026-09-11,Rice,Nashik,4626.71
+2026-09-12,Rice,Nashik,4696.38
+2026-08-14,Rice,Pune,3738.07
+2026-08-15,Rice,Pune,3680.86
+2026-08-16,Rice,Pune,3356.86
+2026-08-17,Rice,Pune,3848.0
+2026-08-18,Rice,Pune,4039.1
+2026-08-19,Rice,Pune,3958.4
+2026-08-20,Rice,Pune,3991.86
+2026-08-21,Rice,Pune,3806.88
+2026-08-22,Rice,Pune,3952.64
+2026-08-23,Rice,Pune,4019.48
+2026-08-24,Rice,Pune,4206.18
+2026-08-25,Rice,Pune,4087.69
+2026-08-26,Rice,Pune,4002.62
+2026-08-27,Rice,Pune,3681.48
+2026-08-28,Rice,Pune,3485.49
+2026-08-29,Rice,Pune,3936.22
+2026-08-30,Rice,Pune,4679.12
+2026-08-31,Rice,Pune,4706.57
+2026-09-01,Rice,Pune,4708.48
+2026-09-02,Rice,Pune,4886.74
+2026-09-03,Rice,Pune,4813.06
+2026-09-04,Rice,Pune,4573.58
+2026-09-05,Rice,Pune,4581.43
+2026-09-06,Rice,Pune,4309.69
+2026-09-07,Rice,Pune,4834.3
+2026-09-08,Rice,Pune,4895.27
+2026-09-09,Rice,Pune,4756.12
+2026-09-10,Rice,Pune,4685.97
+2026-09-11,Rice,Pune,4616.46
+2026-09-12,Rice,Pune,4684.46
+2026-08-14,Rice,Sangli,3735.68
+2026-08-15,Rice,Sangli,3671.27
+2026-08-16,Rice,Sangli,3347.05
+2026-08-17,Rice,Sangli,3820.54
+2026-08-18,Rice,Sangli,3997.0
+2026-08-19,Rice,Sangli,3941.22
+2026-08-20,Rice,Sangli,3969.3
+2026-08-21,Rice,Sangli,4078.76
+2026-08-22,Rice,Sangli,3992.1
+2026-08-23,Rice,Sangli,3981.24
+2026-08-24,Rice,Sangli,3977.75
+2026-08-25,Rice,Sangli,4170.38
+2026-08-26,Rice,Sangli,3992.0
+2026-08-27,Rice,Sangli,3949.09
+2026-08-28,Rice,Sangli,3576.65
+2026-08-29,Rice,Sangli,3738.89
+2026-08-30,Rice,Sangli,4630.71
+2026-08-31,Rice,Sangli,4739.43
+2026-09-01,Rice,Sangli,4813.65
+2026-09-02,Rice,Sangli,4844.26
+2026-09-03,Rice,Sangli,4732.8
+2026-09-04,Rice,Sangli,4639.01
+2026-09-05,Rice,Sangli,4495.5
+2026-09-06,Rice,Sangli,4572.69
+2026-09-07,Rice,Sangli,4751.67
+2026-09-08,Rice,Sangli,4844.0
+2026-09-09,Rice,Sangli,4800.02
+2026-09-10,Rice,Sangli,4615.87
+2026-09-11,Rice,Sangli,4644.63
+2026-09-12,Rice,Sangli,4675.96
+2026-08-14,Rice,Satara,3739.88
+2026-08-15,Rice,Satara,3677.11
+2026-08-16,Rice,Satara,3335.45
+2026-08-17,Rice,Satara,3814.25
+2026-08-18,Rice,Satara,3958.51
+2026-08-19,Rice,Satara,3872.82
+2026-08-20,Rice,Satara,4001.27
+2026-08-21,Rice,Satara,4117.17
+2026-08-22,Rice,Satara,4029.71
+2026-08-23,Rice,Satara,3980.11
+2026-08-24,Rice,Satara,3996.49
+2026-08-25,Rice,Satara,3969.85
+2026-08-26,Rice,Satara,3986.42
+2026-08-27,Rice,Satara,3959.05
+2026-08-28,Rice,Satara,3856.89
+2026-08-29,Rice,Satara,3782.51
+2026-08-30,Rice,Satara,4628.46
+2026-08-31,Rice,Satara,4712.69
+2026-09-01,Rice,Satara,4795.78
+2026-09-02,Rice,Satara,4806.55
+2026-09-03,Rice,Satara,4668.1
+2026-09-04,Rice,Satara,4548.13
+2026-09-05,Rice,Satara,4492.56
+2026-09-06,Rice,Satara,4502.14
+2026-09-07,Rice,Satara,4786.48
+2026-09-08,Rice,Satara,4826.28
+2026-09-09,Rice,Satara,4737.87
+2026-09-10,Rice,Satara,4664.72
+2026-09-11,Rice,Satara,4620.97
+2026-09-12,Rice,Satara,4685.57
+2026-08-14,Rice,Solapur,3748.61
+2026-08-15,Rice,Solapur,3678.25
+2026-08-16,Rice,Solapur,3358.97
+2026-08-17,Rice,Solapur,3839.09
+2026-08-18,Rice,Solapur,4003.45
+2026-08-19,Rice,Solapur,3964.54
+2026-08-20,Rice,Solapur,4059.57
+2026-08-21,Rice,Solapur,4103.73
+2026-08-22,Rice,Solapur,4044.25
+2026-08-23,Rice,Solapur,3702.25
+2026-08-24,Rice,Solapur,3894.83
+2026-08-25,Rice,Solapur,3974.13
+2026-08-26,Rice,Solapur,4090.2
+2026-08-27,Rice,Solapur,3978.07
+2026-08-28,Rice,Solapur,3943.51
+2026-08-29,Rice,Solapur,3498.49
+2026-08-30,Rice,Solapur,4614.38
+2026-08-31,Rice,Solapur,4733.35
+2026-09-01,Rice,Solapur,4842.95
+2026-09-02,Rice,Solapur,4810.96
+2026-09-03,Rice,Solapur,4732.57
+2026-09-04,Rice,Solapur,4731.61
+2026-09-05,Rice,Solapur,4532.31
+2026-09-06,Rice,Solapur,4373.96
+2026-09-07,Rice,Solapur,4764.85
+2026-09-08,Rice,Solapur,4900.28
+2026-09-09,Rice,Solapur,4757.9
+2026-09-10,Rice,Solapur,4682.68
+2026-09-11,Rice,Solapur,4631.03
+2026-09-12,Rice,Solapur,4702.15
+2026-08-14,Tomato,Ahmednagar,3343.23
+2026-08-15,Tomato,Ahmednagar,3286.3
+2026-08-16,Tomato,Ahmednagar,3195.1
+2026-08-17,Tomato,Ahmednagar,3391.77
+2026-08-18,Tomato,Ahmednagar,3435.25
+2026-08-19,Tomato,Ahmednagar,3440.35
+2026-08-20,Tomato,Ahmednagar,3420.41
+2026-08-21,Tomato,Ahmednagar,3484.87
+2026-08-22,Tomato,Ahmednagar,3460.65
+2026-08-23,Tomato,Ahmednagar,3396.88
+2026-08-24,Tomato,Ahmednagar,3521.33
+2026-08-25,Tomato,Ahmednagar,3580.17
+2026-08-26,Tomato,Ahmednagar,3580.69
+2026-08-27,Tomato,Ahmednagar,3510.28
+2026-08-28,Tomato,Ahmednagar,3493.33
+2026-08-29,Tomato,Ahmednagar,3370.01
+2026-08-30,Tomato,Ahmednagar,3404.08
+2026-08-31,Tomato,Ahmednagar,3515.65
+2026-09-01,Tomato,Ahmednagar,3534.35
+2026-09-02,Tomato,Ahmednagar,3604.08
+2026-09-03,Tomato,Ahmednagar,3611.73
+2026-09-04,Tomato,Ahmednagar,3597.29
+2026-09-05,Tomato,Ahmednagar,3537.01
+2026-09-06,Tomato,Ahmednagar,3498.05
+2026-09-07,Tomato,Ahmednagar,3603.74
+2026-09-08,Tomato,Ahmednagar,3634.88
+2026-09-09,Tomato,Ahmednagar,3614.91
+2026-09-10,Tomato,Ahmednagar,3613.59
+2026-09-11,Tomato,Ahmednagar,3633.91
+2026-09-12,Tomato,Ahmednagar,3560.37
+2026-08-14,Tomato,Chhatrapati Sambhajinagar,3340.43
+2026-08-15,Tomato,Chhatrapati Sambhajinagar,3283.49
+2026-08-16,Tomato,Chhatrapati Sambhajinagar,3192.3
+2026-08-17,Tomato,Chhatrapati Sambhajinagar,3391.77
+2026-08-18,Tomato,Chhatrapati Sambhajinagar,3432.45
+2026-08-19,Tomato,Chhatrapati Sambhajinagar,3433.47
+2026-08-20,Tomato,Chhatrapati Sambhajinagar,3417.61
+2026-08-21,Tomato,Chhatrapati Sambhajinagar,3482.07
+2026-08-22,Tomato,Chhatrapati Sambhajinagar,3445.9
+2026-08-23,Tomato,Chhatrapati Sambhajinagar,3379.41
+2026-08-24,Tomato,Chhatrapati Sambhajinagar,3516.42
+2026-08-25,Tomato,Chhatrapati Sambhajinagar,3573.75
+2026-08-26,Tomato,Chhatrapati Sambhajinagar,3594.43
+2026-08-27,Tomato,Chhatrapati Sambhajinagar,3507.48
+2026-08-28,Tomato,Chhatrapati Sambhajinagar,3486.73
+2026-08-29,Tomato,Chhatrapati Sambhajinagar,3360.75
+2026-08-30,Tomato,Chhatrapati Sambhajinagar,3401.28
+2026-08-31,Tomato,Chhatrapati Sambhajinagar,3500.64
+2026-09-01,Tomato,Chhatrapati Sambhajinagar,3526.37
+2026-09-02,Tomato,Chhatrapati Sambhajinagar,3602.66
+2026-09-03,Tomato,Chhatrapati Sambhajinagar,3614.23
+2026-09-04,Tomato,Chhatrapati Sambhajinagar,3596.85
+2026-09-05,Tomato,Chhatrapati Sambhajinagar,3534.88
+2026-09-06,Tomato,Chhatrapati Sambhajinagar,3485.51
+2026-09-07,Tomato,Chhatrapati Sambhajinagar,3560.94
+2026-09-08,Tomato,Chhatrapati Sambhajinagar,3615.73
+2026-09-09,Tomato,Chhatrapati Sambhajinagar,3605.77
+2026-09-10,Tomato,Chhatrapati Sambhajinagar,3603.7
+2026-09-11,Tomato,Chhatrapati Sambhajinagar,3632.51
+2026-09-12,Tomato,Chhatrapati Sambhajinagar,3569.95
+2026-08-14,Tomato,Jalgaon,3343.36
+2026-08-15,Tomato,Jalgaon,3286.42
+2026-08-16,Tomato,Jalgaon,3195.22
+2026-08-17,Tomato,Jalgaon,3393.4
+2026-08-18,Tomato,Jalgaon,3435.38
+2026-08-19,Tomato,Jalgaon,3440.47
+2026-08-20,Tomato,Jalgaon,3420.54
+2026-08-21,Tomato,Jalgaon,3485.0
+2026-08-22,Tomato,Jalgaon,3460.77
+2026-08-23,Tomato,Jalgaon,3396.06
+2026-08-24,Tomato,Jalgaon,3522.02
+2026-08-25,Tomato,Jalgaon,3579.36
+2026-08-26,Tomato,Jalgaon,3579.88
+2026-08-27,Tomato,Jalgaon,3509.47
+2026-08-28,Tomato,Jalgaon,3492.51
+2026-08-29,Tomato,Jalgaon,3369.2
+2026-08-30,Tomato,Jalgaon,3403.26
+2026-08-31,Tomato,Jalgaon,3516.35
+2026-09-01,Tomato,Jalgaon,3534.48
+2026-09-02,Tomato,Jalgaon,3596.22
+2026-09-03,Tomato,Jalgaon,3603.87
+2026-09-04,Tomato,Jalgaon,3598.84
+2026-09-05,Tomato,Jalgaon,3537.13
+2026-09-06,Tomato,Jalgaon,3498.17
+2026-09-07,Tomato,Jalgaon,3605.37
+2026-09-08,Tomato,Jalgaon,3635.01
+2026-09-09,Tomato,Jalgaon,3615.03
+2026-09-10,Tomato,Jalgaon,3613.71
+2026-09-11,Tomato,Jalgaon,3634.03
+2026-09-12,Tomato,Jalgaon,3560.5
+2026-08-14,Tomato,Kolhapur,3340.87
+2026-08-15,Tomato,Kolhapur,3282.81
+2026-08-16,Tomato,Kolhapur,3191.08
+2026-08-17,Tomato,Kolhapur,3397.15
+2026-08-18,Tomato,Kolhapur,3434.71
+2026-08-19,Tomato,Kolhapur,3456.0
+2026-08-20,Tomato,Kolhapur,3434.19
+2026-08-21,Tomato,Kolhapur,3475.33
+2026-08-22,Tomato,Kolhapur,3463.99
+2026-08-23,Tomato,Kolhapur,3395.23
+2026-08-24,Tomato,Kolhapur,3520.33
+2026-08-25,Tomato,Kolhapur,3574.05
+2026-08-26,Tomato,Kolhapur,3576.29
+2026-08-27,Tomato,Kolhapur,3508.19
+2026-08-28,Tomato,Kolhapur,3491.09
+2026-08-29,Tomato,Kolhapur,3368.4
+2026-08-30,Tomato,Kolhapur,3401.94
+2026-08-31,Tomato,Kolhapur,3515.55
+2026-09-01,Tomato,Kolhapur,3556.49
+2026-09-02,Tomato,Kolhapur,3624.44
+2026-09-03,Tomato,Kolhapur,3606.88
+2026-09-04,Tomato,Kolhapur,3600.58
+2026-09-05,Tomato,Kolhapur,3540.3
+2026-09-06,Tomato,Kolhapur,3502.02
+2026-09-07,Tomato,Kolhapur,3610.29
+2026-09-08,Tomato,Kolhapur,3637.38
+2026-09-09,Tomato,Kolhapur,3615.14
+2026-09-10,Tomato,Kolhapur,3614.53
+2026-09-11,Tomato,Kolhapur,3634.85
+2026-09-12,Tomato,Kolhapur,3561.31
+2026-08-14,Tomato,Nagpur,3364.71
+2026-08-15,Tomato,Nagpur,3311.45
+2026-08-16,Tomato,Nagpur,3232.41
+2026-08-17,Tomato,Nagpur,3408.34
+2026-08-18,Tomato,Nagpur,3449.22
+2026-08-19,Tomato,Nagpur,3460.86
+2026-08-20,Tomato,Nagpur,3497.03
+2026-08-21,Tomato,Nagpur,3556.3
+2026-08-22,Tomato,Nagpur,3559.08
+2026-08-23,Tomato,Nagpur,3529.83
+2026-08-24,Tomato,Nagpur,3575.82
+2026-08-25,Tomato,Nagpur,3601.76
+2026-08-26,Tomato,Nagpur,3579.52
+2026-08-27,Tomato,Nagpur,3544.95
+2026-08-28,Tomato,Nagpur,3540.97
+2026-08-29,Tomato,Nagpur,3415.82
+2026-08-30,Tomato,Nagpur,3464.9
+2026-08-31,Tomato,Nagpur,3600.22
+2026-09-01,Tomato,Nagpur,3561.33
+2026-09-02,Tomato,Nagpur,3606.24
+2026-09-03,Tomato,Nagpur,3609.51
+2026-09-04,Tomato,Nagpur,3593.29
+2026-09-05,Tomato,Nagpur,3530.97
+2026-09-06,Tomato,Nagpur,3511.31
+2026-09-07,Tomato,Nagpur,3633.85
+2026-09-08,Tomato,Nagpur,3648.35
+2026-09-09,Tomato,Nagpur,3614.75
+2026-09-10,Tomato,Nagpur,3612.47
+2026-09-11,Tomato,Nagpur,3623.86
+2026-09-12,Tomato,Nagpur,3552.83
+2026-08-14,Tomato,Nashik,3343.23
+2026-08-15,Tomato,Nashik,3286.3
+2026-08-16,Tomato,Nashik,3195.1
+2026-08-17,Tomato,Nashik,3391.77
+2026-08-18,Tomato,Nashik,3435.25
+2026-08-19,Tomato,Nashik,3440.35
+2026-08-20,Tomato,Nashik,3420.41
+2026-08-21,Tomato,Nashik,3484.87
+2026-08-22,Tomato,Nashik,3460.65
+2026-08-23,Tomato,Nashik,3396.88
+2026-08-24,Tomato,Nashik,3521.33
+2026-08-25,Tomato,Nashik,3580.17
+2026-08-26,Tomato,Nashik,3580.69
+2026-08-27,Tomato,Nashik,3510.28
+2026-08-28,Tomato,Nashik,3493.33
+2026-08-29,Tomato,Nashik,3370.01
+2026-08-30,Tomato,Nashik,3404.08
+2026-08-31,Tomato,Nashik,3515.65
+2026-09-01,Tomato,Nashik,3534.35
+2026-09-02,Tomato,Nashik,3604.08
+2026-09-03,Tomato,Nashik,3611.73
+2026-09-04,Tomato,Nashik,3597.29
+2026-09-05,Tomato,Nashik,3537.01
+2026-09-06,Tomato,Nashik,3498.05
+2026-09-07,Tomato,Nashik,3603.74
+2026-09-08,Tomato,Nashik,3634.88
+2026-09-09,Tomato,Nashik,3614.91
+2026-09-10,Tomato,Nashik,3613.59
+2026-09-11,Tomato,Nashik,3633.91
+2026-09-12,Tomato,Nashik,3560.37
+2026-08-14,Tomato,Pune,3343.23
+2026-08-15,Tomato,Pune,3285.75
+2026-08-16,Tomato,Pune,3194.56
+2026-08-17,Tomato,Pune,3393.28
+2026-08-18,Tomato,Pune,3435.25
+2026-08-19,Tomato,Pune,3440.35
+2026-08-20,Tomato,Pune,3420.41
+2026-08-21,Tomato,Pune,3484.87
+2026-08-22,Tomato,Pune,3460.11
+2026-08-23,Tomato,Pune,3395.94
+2026-08-24,Tomato,Pune,3521.9
+2026-08-25,Tomato,Pune,3579.23
+2026-08-26,Tomato,Pune,3579.76
+2026-08-27,Tomato,Pune,3509.35
+2026-08-28,Tomato,Pune,3492.39
+2026-08-29,Tomato,Pune,3369.07
+2026-08-30,Tomato,Pune,3403.14
+2026-08-31,Tomato,Pune,3516.22
+2026-09-01,Tomato,Pune,3534.35
+2026-09-02,Tomato,Pune,3596.1
+2026-09-03,Tomato,Pune,3603.75
+2026-09-04,Tomato,Pune,3598.72
+2026-09-05,Tomato,Pune,3537.01
+2026-09-06,Tomato,Pune,3498.05
+2026-09-07,Tomato,Pune,3605.25
+2026-09-08,Tomato,Pune,3634.88
+2026-09-09,Tomato,Pune,3614.91
+2026-09-10,Tomato,Pune,3603.79
+2026-09-11,Tomato,Pune,3634.35
+2026-09-12,Tomato,Pune,3560.37
+2026-08-14,Tomato,Sangli,3344.36
+2026-08-15,Tomato,Sangli,3287.31
+2026-08-16,Tomato,Sangli,3196.11
+2026-08-17,Tomato,Sangli,3391.58
+2026-08-18,Tomato,Sangli,3439.36
+2026-08-19,Tomato,Sangli,3447.11
+2026-08-20,Tomato,Sangli,3427.18
+2026-08-21,Tomato,Sangli,3491.63
+2026-08-22,Tomato,Sangli,3529.09
+2026-08-23,Tomato,Sangli,3512.51
+2026-08-24,Tomato,Sangli,3601.68
+2026-08-25,Tomato,Sangli,3591.88
+2026-08-26,Tomato,Sangli,3566.54
+2026-08-27,Tomato,Sangli,3509.34
+2026-08-28,Tomato,Sangli,3493.41
+2026-08-29,Tomato,Sangli,3376.66
+2026-08-30,Tomato,Sangli,3407.17
+2026-08-31,Tomato,Sangli,3525.17
+2026-09-01,Tomato,Sangli,3526.76
+2026-09-02,Tomato,Sangli,3591.24
+2026-09-03,Tomato,Sangli,3598.42
+2026-09-04,Tomato,Sangli,3593.38
+2026-09-05,Tomato,Sangli,3519.86
+2026-09-06,Tomato,Sangli,3472.07
+2026-09-07,Tomato,Sangli,3550.72
+2026-09-08,Tomato,Sangli,3589.04
+2026-09-09,Tomato,Sangli,3600.84
+2026-09-10,Tomato,Sangli,3608.84
+2026-09-11,Tomato,Sangli,3622.26
+2026-09-12,Tomato,Sangli,3547.83
+2026-08-14,Tomato,Satara,3343.16
+2026-08-15,Tomato,Satara,3285.52
+2026-08-16,Tomato,Satara,3193.79
+2026-08-17,Tomato,Satara,3391.71
+2026-08-18,Tomato,Satara,3437.14
+2026-08-19,Tomato,Satara,3444.89
+2026-08-20,Tomato,Satara,3426.87
+2026-08-21,Tomato,Satara,3488.39
+2026-08-22,Tomato,Satara,3525.85
+2026-08-23,Tomato,Satara,3509.18
+2026-08-24,Tomato,Satara,3592.24
+2026-08-25,Tomato,Satara,3588.59
+2026-08-26,Tomato,Satara,3564.6
+2026-08-27,Tomato,Satara,3513.41
+2026-08-28,Tomato,Satara,3495.38
+2026-08-29,Tomato,Satara,3373.38
+2026-08-30,Tomato,Satara,3403.35
+2026-08-31,Tomato,Satara,3521.88
+2026-09-01,Tomato,Satara,3545.03
+2026-09-02,Tomato,Satara,3619.92
+2026-09-03,Tomato,Satara,3608.2
+2026-09-04,Tomato,Satara,3591.86
+2026-09-05,Tomato,Satara,3519.76
+2026-09-06,Tomato,Satara,3471.97
+2026-09-07,Tomato,Satara,3572.11
+2026-09-08,Tomato,Satara,3629.0
+2026-09-09,Tomato,Satara,3612.26
+2026-09-10,Tomato,Satara,3608.74
+2026-09-11,Tomato,Satara,3622.16
+2026-09-12,Tomato,Satara,3547.73
+2026-08-14,Tomato,Solapur,3378.28
+2026-08-15,Tomato,Solapur,3324.48
+2026-08-16,Tomato,Solapur,3238.73
+2026-08-17,Tomato,Solapur,3418.62
+2026-08-18,Tomato,Solapur,3507.53
+2026-08-19,Tomato,Solapur,3519.27
+2026-08-20,Tomato,Solapur,3549.23
+2026-08-21,Tomato,Solapur,3622.05
+2026-08-22,Tomato,Solapur,3559.11
+2026-08-23,Tomato,Solapur,3536.04
+2026-08-24,Tomato,Solapur,3609.03
+2026-08-25,Tomato,Solapur,3639.52
+2026-08-26,Tomato,Solapur,3616.37
+2026-08-27,Tomato,Solapur,3568.58
+2026-08-28,Tomato,Solapur,3595.44
+2026-08-29,Tomato,Solapur,3457.66
+2026-08-30,Tomato,Solapur,3521.74
+2026-08-31,Tomato,Solapur,3672.63
+2026-09-01,Tomato,Solapur,3642.47
+2026-09-02,Tomato,Solapur,3655.51
+2026-09-03,Tomato,Solapur,3651.14
+2026-09-04,Tomato,Solapur,3636.01
+2026-09-05,Tomato,Solapur,3559.55
+2026-09-06,Tomato,Solapur,3519.88
+2026-09-07,Tomato,Solapur,3611.83
+2026-09-08,Tomato,Solapur,3627.66
+2026-09-09,Tomato,Solapur,3611.66
+2026-09-10,Tomato,Solapur,3598.95
+2026-09-11,Tomato,Solapur,3634.3
+2026-09-12,Tomato,Solapur,3566.21
+2026-08-14,Wheat,Ahmednagar,3488.8
+2026-08-15,Wheat,Ahmednagar,3444.55
+2026-08-16,Wheat,Ahmednagar,3249.49
+2026-08-17,Wheat,Ahmednagar,3340.46
+2026-08-18,Wheat,Ahmednagar,3563.45
+2026-08-19,Wheat,Ahmednagar,3615.08
+2026-08-20,Wheat,Ahmednagar,3594.31
+2026-08-21,Wheat,Ahmednagar,3603.69
+2026-08-22,Wheat,Ahmednagar,3573.08
+2026-08-23,Wheat,Ahmednagar,3476.01
+2026-08-24,Wheat,Ahmednagar,3587.89
+2026-08-25,Wheat,Ahmednagar,3655.68
+2026-08-26,Wheat,Ahmednagar,3616.79
+2026-08-27,Wheat,Ahmednagar,3587.98
+2026-08-28,Wheat,Ahmednagar,3591.98
+2026-08-29,Wheat,Ahmednagar,3499.61
+2026-08-30,Wheat,Ahmednagar,3562.6
+2026-08-31,Wheat,Ahmednagar,3706.73
+2026-09-01,Wheat,Ahmednagar,3661.3
+2026-09-02,Wheat,Ahmednagar,3736.65
+2026-09-03,Wheat,Ahmednagar,3794.2
+2026-09-04,Wheat,Ahmednagar,3805.3
+2026-09-05,Wheat,Ahmednagar,3780.14
+2026-09-06,Wheat,Ahmednagar,3645.86
+2026-09-07,Wheat,Ahmednagar,3830.37
+2026-09-08,Wheat,Ahmednagar,3833.71
+2026-09-09,Wheat,Ahmednagar,3876.48
+2026-09-10,Wheat,Ahmednagar,3928.67
+2026-09-11,Wheat,Ahmednagar,3991.15
+2026-09-12,Wheat,Ahmednagar,3927.77
+2026-08-14,Wheat,Chhatrapati Sambhajinagar,3486.0
+2026-08-15,Wheat,Chhatrapati Sambhajinagar,3411.87
+2026-08-16,Wheat,Chhatrapati Sambhajinagar,3182.86
+2026-08-17,Wheat,Chhatrapati Sambhajinagar,3358.89
+2026-08-18,Wheat,Chhatrapati Sambhajinagar,3562.4
+2026-08-19,Wheat,Chhatrapati Sambhajinagar,3597.44
+2026-08-20,Wheat,Chhatrapati Sambhajinagar,3587.51
+2026-08-21,Wheat,Chhatrapati Sambhajinagar,3601.26
+2026-08-22,Wheat,Chhatrapati Sambhajinagar,3573.39
+2026-08-23,Wheat,Chhatrapati Sambhajinagar,3472.95
+2026-08-24,Wheat,Chhatrapati Sambhajinagar,3582.99
+2026-08-25,Wheat,Chhatrapati Sambhajinagar,3627.1
+2026-08-26,Wheat,Chhatrapati Sambhajinagar,3611.29
+2026-08-27,Wheat,Chhatrapati Sambhajinagar,3569.82
+2026-08-28,Wheat,Chhatrapati Sambhajinagar,3583.44
+2026-08-29,Wheat,Chhatrapati Sambhajinagar,3485.08
+2026-08-30,Wheat,Chhatrapati Sambhajinagar,3513.9
+2026-08-31,Wheat,Chhatrapati Sambhajinagar,3705.11
+2026-09-01,Wheat,Chhatrapati Sambhajinagar,3678.45
+2026-09-02,Wheat,Chhatrapati Sambhajinagar,3761.64
+2026-09-03,Wheat,Chhatrapati Sambhajinagar,3732.4
+2026-09-04,Wheat,Chhatrapati Sambhajinagar,3842.29
+2026-09-05,Wheat,Chhatrapati Sambhajinagar,3777.99
+2026-09-06,Wheat,Chhatrapati Sambhajinagar,3653.97
+2026-09-07,Wheat,Chhatrapati Sambhajinagar,3824.94
+2026-09-08,Wheat,Chhatrapati Sambhajinagar,3831.08
+2026-09-09,Wheat,Chhatrapati Sambhajinagar,3848.14
+2026-09-10,Wheat,Chhatrapati Sambhajinagar,3882.27
+2026-09-11,Wheat,Chhatrapati Sambhajinagar,3926.12
+2026-09-12,Wheat,Chhatrapati Sambhajinagar,3892.12
+2026-08-14,Wheat,Jalgaon,3488.93
+2026-08-15,Wheat,Jalgaon,3444.67
+2026-08-16,Wheat,Jalgaon,3249.61
+2026-08-17,Wheat,Jalgaon,3342.09
+2026-08-18,Wheat,Jalgaon,3563.57
+2026-08-19,Wheat,Jalgaon,3615.2
+2026-08-20,Wheat,Jalgaon,3594.44
+2026-08-21,Wheat,Jalgaon,3603.82
+2026-08-22,Wheat,Jalgaon,3573.2
+2026-08-23,Wheat,Jalgaon,3475.2
+2026-08-24,Wheat,Jalgaon,3588.59
+2026-08-25,Wheat,Jalgaon,3654.86
+2026-08-26,Wheat,Jalgaon,3615.98
+2026-08-27,Wheat,Jalgaon,3584.24
+2026-08-28,Wheat,Jalgaon,3593.34
+2026-08-29,Wheat,Jalgaon,3485.56
+2026-08-30,Wheat,Jalgaon,3527.53
+2026-08-31,Wheat,Jalgaon,3708.61
+2026-09-01,Wheat,Jalgaon,3680.7
+2026-09-02,Wheat,Jalgaon,3758.12
+2026-09-03,Wheat,Jalgaon,3728.88
+2026-09-04,Wheat,Jalgaon,3844.54
+2026-09-05,Wheat,Jalgaon,3777.6
+2026-09-06,Wheat,Jalgaon,3656.22
+2026-09-07,Wheat,Jalgaon,3812.34
+2026-09-08,Wheat,Jalgaon,3836.51
+2026-09-09,Wheat,Jalgaon,3861.81
+2026-09-10,Wheat,Jalgaon,3933.03
+2026-09-11,Wheat,Jalgaon,3990.75
+2026-09-12,Wheat,Jalgaon,3927.89
+2026-08-14,Wheat,Kolhapur,3486.44
+2026-08-15,Wheat,Kolhapur,3440.58
+2026-08-16,Wheat,Kolhapur,3246.37
+2026-08-17,Wheat,Kolhapur,3337.99
+2026-08-18,Wheat,Kolhapur,3563.27
+2026-08-19,Wheat,Kolhapur,3610.94
+2026-08-20,Wheat,Kolhapur,3594.93
+2026-08-21,Wheat,Kolhapur,3599.42
+2026-08-22,Wheat,Kolhapur,3571.92
+2026-08-23,Wheat,Kolhapur,3473.12
+2026-08-24,Wheat,Kolhapur,3587.99
+2026-08-25,Wheat,Kolhapur,3653.58
+2026-08-26,Wheat,Kolhapur,3611.24
+2026-08-27,Wheat,Kolhapur,3583.4
+2026-08-28,Wheat,Kolhapur,3585.01
+2026-08-29,Wheat,Kolhapur,3485.79
+2026-08-30,Wheat,Kolhapur,3516.55
+2026-08-31,Wheat,Kolhapur,3709.91
+2026-09-01,Wheat,Kolhapur,3701.97
+2026-09-02,Wheat,Kolhapur,3805.95
+2026-09-03,Wheat,Kolhapur,3841.43
+2026-09-04,Wheat,Kolhapur,3818.06
+2026-09-05,Wheat,Kolhapur,3771.08
+2026-09-06,Wheat,Kolhapur,3649.49
+2026-09-07,Wheat,Kolhapur,3835.61
+2026-09-08,Wheat,Kolhapur,3836.9
+2026-09-09,Wheat,Kolhapur,3885.79
+2026-09-10,Wheat,Kolhapur,3927.03
+2026-09-11,Wheat,Kolhapur,3991.57
+2026-09-12,Wheat,Kolhapur,3928.71
+2026-08-14,Wheat,Nagpur,3495.78
+2026-08-15,Wheat,Nagpur,3452.62
+2026-08-16,Wheat,Nagpur,3259.58
+2026-08-17,Wheat,Nagpur,3480.85
+2026-08-18,Wheat,Nagpur,3632.82
+2026-08-19,Wheat,Nagpur,3630.02
+2026-08-20,Wheat,Nagpur,3625.28
+2026-08-21,Wheat,Nagpur,3636.73
+2026-08-22,Wheat,Nagpur,3608.73
+2026-08-23,Wheat,Nagpur,3548.43
+2026-08-24,Wheat,Nagpur,3663.33
+2026-08-25,Wheat,Nagpur,3687.08
+2026-08-26,Wheat,Nagpur,3727.62
+2026-08-27,Wheat,Nagpur,3719.36
+2026-08-28,Wheat,Nagpur,3808.44
+2026-08-29,Wheat,Nagpur,3711.24
+2026-08-30,Wheat,Nagpur,3713.14
+2026-08-31,Wheat,Nagpur,3866.49
+2026-09-01,Wheat,Nagpur,3793.98
+2026-09-02,Wheat,Nagpur,3869.57
+2026-09-03,Wheat,Nagpur,3835.38
+2026-09-04,Wheat,Nagpur,3863.34
+2026-09-05,Wheat,Nagpur,3790.27
+2026-09-06,Wheat,Nagpur,3750.26
+2026-09-07,Wheat,Nagpur,3978.55
+2026-09-08,Wheat,Nagpur,4097.73
+2026-09-09,Wheat,Nagpur,4058.63
+2026-09-10,Wheat,Nagpur,4089.69
+2026-09-11,Wheat,Nagpur,4105.98
+2026-09-12,Wheat,Nagpur,4052.17
+2026-08-14,Wheat,Nashik,3488.8
+2026-08-15,Wheat,Nashik,3444.55
+2026-08-16,Wheat,Nashik,3249.49
+2026-08-17,Wheat,Nashik,3340.46
+2026-08-18,Wheat,Nashik,3563.45
+2026-08-19,Wheat,Nashik,3615.08
+2026-08-20,Wheat,Nashik,3594.31
+2026-08-21,Wheat,Nashik,3603.69
+2026-08-22,Wheat,Nashik,3573.08
+2026-08-23,Wheat,Nashik,3476.01
+2026-08-24,Wheat,Nashik,3587.89
+2026-08-25,Wheat,Nashik,3655.68
+2026-08-26,Wheat,Nashik,3616.79
+2026-08-27,Wheat,Nashik,3587.98
+2026-08-28,Wheat,Nashik,3591.98
+2026-08-29,Wheat,Nashik,3499.61
+2026-08-30,Wheat,Nashik,3562.6
+2026-08-31,Wheat,Nashik,3706.73
+2026-09-01,Wheat,Nashik,3661.3
+2026-09-02,Wheat,Nashik,3736.65
+2026-09-03,Wheat,Nashik,3794.2
+2026-09-04,Wheat,Nashik,3805.3
+2026-09-05,Wheat,Nashik,3780.14
+2026-09-06,Wheat,Nashik,3645.86
+2026-09-07,Wheat,Nashik,3830.37
+2026-09-08,Wheat,Nashik,3833.71
+2026-09-09,Wheat,Nashik,3876.48
+2026-09-10,Wheat,Nashik,3928.67
+2026-09-11,Wheat,Nashik,3991.15
+2026-09-12,Wheat,Nashik,3927.77
+2026-08-14,Wheat,Pune,3488.8
+2026-08-15,Wheat,Pune,3444.55
+2026-08-16,Wheat,Pune,3249.49
+2026-08-17,Wheat,Pune,3341.96
+2026-08-18,Wheat,Pune,3563.45
+2026-08-19,Wheat,Pune,3615.08
+2026-08-20,Wheat,Pune,3594.31
+2026-08-21,Wheat,Pune,3603.69
+2026-08-22,Wheat,Pune,3573.08
+2026-08-23,Wheat,Pune,3475.07
+2026-08-24,Wheat,Pune,3588.46
+2026-08-25,Wheat,Pune,3654.74
+2026-08-26,Wheat,Pune,3615.85
+2026-08-27,Wheat,Pune,3584.11
+2026-08-28,Wheat,Pune,3593.22
+2026-08-29,Wheat,Pune,3485.44
+2026-08-30,Wheat,Pune,3527.41
+2026-08-31,Wheat,Pune,3708.49
+2026-09-01,Wheat,Pune,3680.58
+2026-09-02,Wheat,Pune,3757.99
+2026-09-03,Wheat,Pune,3728.76
+2026-09-04,Wheat,Pune,3844.42
+2026-09-05,Wheat,Pune,3777.47
+2026-09-06,Wheat,Pune,3656.09
+2026-09-07,Wheat,Pune,3812.22
+2026-09-08,Wheat,Pune,3836.39
+2026-09-09,Wheat,Pune,3861.68
+2026-09-10,Wheat,Pune,3932.91
+2026-09-11,Wheat,Pune,3990.63
+2026-09-12,Wheat,Pune,3927.77
+2026-08-14,Wheat,Sangli,3489.92
+2026-08-15,Wheat,Sangli,3445.56
+2026-08-16,Wheat,Sangli,3250.5
+2026-08-17,Wheat,Sangli,3340.26
+2026-08-18,Wheat,Sangli,3566.57
+2026-08-19,Wheat,Sangli,3617.27
+2026-08-20,Wheat,Sangli,3599.35
+2026-08-21,Wheat,Sangli,3605.88
+2026-08-22,Wheat,Sangli,3578.27
+2026-08-23,Wheat,Sangli,3481.2
+2026-08-24,Wheat,Sangli,3594.07
+2026-08-25,Wheat,Sangli,3658.24
+2026-08-26,Wheat,Sangli,3621.83
+2026-08-27,Wheat,Sangli,3593.73
+2026-08-28,Wheat,Sangli,3597.28
+2026-08-29,Wheat,Sangli,3504.8
+2026-08-30,Wheat,Sangli,3570.26
+2026-08-31,Wheat,Sangli,3721.39
+2026-09-01,Wheat,Sangli,3648.06
+2026-09-02,Wheat,Sangli,3718.9
+2026-09-03,Wheat,Sangli,3777.76
+2026-09-04,Wheat,Sangli,3797.0
+2026-09-05,Wheat,Sangli,3780.53
+2026-09-06,Wheat,Sangli,3639.87
+2026-09-07,Wheat,Sangli,3819.84
+2026-09-08,Wheat,Sangli,3820.25
+2026-09-09,Wheat,Sangli,3864.05
+2026-09-10,Wheat,Sangli,3916.24
+2026-09-11,Wheat,Sangli,3912.01
+2026-09-12,Wheat,Sangli,3849.51
+2026-08-14,Wheat,Satara,3488.73
+2026-08-15,Wheat,Satara,3442.75
+2026-08-16,Wheat,Satara,3248.55
+2026-08-17,Wheat,Satara,3337.46
+2026-08-18,Wheat,Satara,3564.72
+2026-08-19,Wheat,Satara,3615.05
+2026-08-20,Wheat,Satara,3599.04
+2026-08-21,Wheat,Satara,3603.53
+2026-08-22,Wheat,Satara,3575.92
+2026-08-23,Wheat,Satara,3477.39
+2026-08-24,Wheat,Satara,3590.78
+2026-08-25,Wheat,Satara,3654.96
+2026-08-26,Wheat,Satara,3618.54
+2026-08-27,Wheat,Satara,3587.52
+2026-08-28,Wheat,Satara,3596.17
+2026-08-29,Wheat,Satara,3501.51
+2026-08-30,Wheat,Satara,3566.44
+2026-08-31,Wheat,Satara,3718.11
+2026-09-01,Wheat,Satara,3666.33
+2026-09-02,Wheat,Satara,3737.17
+2026-09-03,Wheat,Satara,3787.72
+2026-09-04,Wheat,Satara,3794.72
+2026-09-05,Wheat,Satara,3770.3
+2026-09-06,Wheat,Satara,3633.81
+2026-09-07,Wheat,Satara,3824.12
+2026-09-08,Wheat,Satara,3818.49
+2026-09-09,Wheat,Satara,3863.09
+2026-09-10,Wheat,Satara,3899.12
+2026-09-11,Wheat,Satara,3916.86
+2026-09-12,Wheat,Satara,3849.41
+2026-08-14,Wheat,Solapur,3517.39
+2026-08-15,Wheat,Solapur,3479.49
+2026-08-16,Wheat,Solapur,3297.9
+2026-08-17,Wheat,Solapur,3531.23
+2026-08-18,Wheat,Solapur,3675.88
+2026-08-19,Wheat,Solapur,3646.7
+2026-08-20,Wheat,Solapur,3672.7
+2026-08-21,Wheat,Solapur,3710.6
+2026-08-22,Wheat,Solapur,3706.39
+2026-08-23,Wheat,Solapur,3619.0
+2026-08-24,Wheat,Solapur,3831.92
+2026-08-25,Wheat,Solapur,3822.03
+2026-08-26,Wheat,Solapur,3839.32
+2026-08-27,Wheat,Solapur,3777.0
+2026-08-28,Wheat,Solapur,3798.65
+2026-08-29,Wheat,Solapur,3705.12
+2026-08-30,Wheat,Solapur,3675.55
+2026-08-31,Wheat,Solapur,3859.48
+2026-09-01,Wheat,Solapur,3767.9
+2026-09-02,Wheat,Solapur,3876.97
+2026-09-03,Wheat,Solapur,3861.37
+2026-09-04,Wheat,Solapur,3870.95
+2026-09-05,Wheat,Solapur,3812.38
+2026-09-06,Wheat,Solapur,3800.39
+2026-09-07,Wheat,Solapur,4061.6
+2026-09-08,Wheat,Solapur,4124.54
+2026-09-09,Wheat,Solapur,4159.31
+2026-09-10,Wheat,Solapur,4191.04
+2026-09-11,Wheat,Solapur,4229.27
+2026-09-12,Wheat,Solapur,4139.28
