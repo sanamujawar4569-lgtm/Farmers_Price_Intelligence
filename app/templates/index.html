@@ -5,17 +5,1042 @@
 
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title> Farmer's Price Intelligence</title>
+    <title>Farmer's Price Intelligence</title>
 
-    <link
-        rel="stylesheet"
-        href="{{ url_for('static', filename='style.css') }}"
-    >
+    <style>
+
+        /* =========================================================
+           RESET
+        ========================================================= */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --forest: #173d2b;
+            --forest-dark: #0c2419;
+            --olive: #89966f;
+            --olive-dark: #667653;
+            --cream: #f4f1e8;
+            --paper: #faf9f4;
+            --lime: #c9ef72;
+            --lime-dark: #91bd43;
+            --white: #ffffff;
+            --muted: #75806f;
+            --line: rgba(23, 61, 43, 0.12);
+            --shadow: 0 30px 70px rgba(20, 48, 31, 0.16);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:
+                Inter,
+                ui-sans-serif,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            background: var(--paper);
+            color: var(--forest);
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+        /* =========================================================
+           NAVBAR
+        ========================================================= */
+
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+
+            padding: 18px 5%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            background: rgba(250, 249, 244, 0.78);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+
+            border-bottom: 1px solid rgba(23, 61, 43, 0.08);
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+
+            font-weight: 800;
+            font-size: 18px;
+            letter-spacing: -0.5px;
+        }
+
+        .brand-mark {
+            width: 38px;
+            height: 38px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 13px;
+
+            background: var(--forest);
+            color: var(--lime);
+
+            box-shadow:
+                0 8px 20px rgba(23, 61, 43, 0.22);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            font-size: 13px;
+            color: #596354;
+        }
+
+        .nav-links a {
+            transition: 0.25s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--forest);
+        }
+
+        .nav-button {
+            padding: 11px 19px;
+
+            border-radius: 999px;
+
+            background: var(--lime);
+            color: var(--forest);
+
+            font-size: 13px;
+            font-weight: 800;
+
+            box-shadow:
+                0 8px 20px rgba(145, 189, 67, 0.22);
+        }
+
+
+        /* =========================================================
+           HERO
+        ========================================================= */
+
+        .hero {
+            min-height: 850px;
+
+            padding:
+                150px 5% 100px;
+
+            position: relative;
+            overflow: hidden;
+
+            background:
+                radial-gradient(
+                    circle at 78% 35%,
+                    rgba(143, 176, 92, 0.45),
+                    transparent 28%
+                ),
+                linear-gradient(
+                    135deg,
+                    #173d2b 0%,
+                    #245438 48%,
+                    #5d7047 100%
+                );
+
+            color: white;
+        }
+
+        .hero::before {
+            content: "";
+
+            position: absolute;
+            width: 650px;
+            height: 650px;
+
+            right: -230px;
+            top: -220px;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(201, 239, 114, 0.20),
+                    transparent 65%
+                );
+
+            filter: blur(10px);
+        }
+
+        .hero-content {
+            max-width: 650px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+
+            padding: 10px 16px;
+
+            border-radius: 999px;
+
+            border: 1px solid rgba(201, 239, 114, 0.32);
+
+            background: rgba(201, 239, 114, 0.09);
+
+            color: var(--lime);
+
+            font-size: 12px;
+            font-weight: 800;
+
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            margin-top: 30px;
+
+            font-size: clamp(60px, 7vw, 112px);
+
+            line-height: 0.88;
+
+            letter-spacing: -6px;
+
+            font-weight: 850;
+        }
+
+        .hero h1 span {
+            color: var(--lime);
+            display: block;
+        }
+
+        .hero-text {
+            margin-top: 32px;
+
+            max-width: 610px;
+
+            font-size: 18px;
+            line-height: 1.65;
+
+            color: rgba(255,255,255,0.76);
+        }
+
+
+        /* =========================================================
+           HERO 3D OBJECT
+        ========================================================= */
+
+        .hero-object {
+            position: absolute;
+
+            right: 8%;
+            top: 150px;
+
+            width: 390px;
+            height: 590px;
+
+            transform:
+                perspective(1200px)
+                rotateY(-13deg)
+                rotateX(5deg)
+                rotateZ(4deg);
+
+            z-index: 2;
+        }
+
+        .phone {
+            width: 100%;
+            height: 100%;
+
+            padding: 12px;
+
+            border-radius: 44px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #78966c,
+                    #31573e
+                );
+
+            box-shadow:
+                -25px 30px 70px rgba(0,0,0,0.30),
+                inset 2px 2px 3px rgba(255,255,255,0.35),
+                inset -4px -4px 10px rgba(0,0,0,0.18);
+        }
+
+        .phone-screen {
+            height: 100%;
+
+            border-radius: 35px;
+
+            overflow: hidden;
+
+            position: relative;
+
+            background:
+                linear-gradient(
+                    160deg,
+                    rgba(14, 51, 30, 0.9),
+                    rgba(78, 105, 58, 0.85)
+                );
+        }
+
+        .phone-screen::before {
+            content: "";
+
+            position: absolute;
+            inset: 0;
+
+            background:
+                radial-gradient(
+                    circle at 40% 25%,
+                    rgba(201,239,114,0.28),
+                    transparent 32%
+                );
+        }
+
+        .phone-top {
+            padding: 30px 25px;
+
+            position: relative;
+            z-index: 2;
+        }
+
+        .phone-small {
+            font-size: 11px;
+            color: rgba(255,255,255,0.65);
+        }
+
+        .phone-title {
+            margin-top: 18px;
+
+            font-size: 31px;
+            line-height: 1;
+
+            font-weight: 800;
+        }
+
+        .phone-price {
+            margin-top: 15px;
+
+            font-size: 48px;
+            font-weight: 850;
+
+            color: var(--lime);
+        }
+
+        .phone-card {
+            position: absolute;
+
+            left: 22px;
+            right: 22px;
+            bottom: 25px;
+
+            padding: 22px;
+
+            border-radius: 25px;
+
+            background:
+                rgba(245, 246, 231, 0.94);
+
+            color: var(--forest);
+
+            box-shadow:
+                0 25px 50px rgba(0,0,0,0.22);
+
+            backdrop-filter: blur(16px);
+        }
+
+        .phone-card-label {
+            font-size: 11px;
+            color: var(--muted);
+        }
+
+        .phone-card strong {
+            display: block;
+
+            margin-top: 8px;
+
+            font-size: 22px;
+        }
+
+        .phone-chart {
+            height: 65px;
+
+            margin-top: 20px;
+
+            display: flex;
+            align-items: end;
+            gap: 6px;
+        }
+
+        .phone-bar {
+            flex: 1;
+
+            border-radius: 5px 5px 2px 2px;
+
+            background:
+                linear-gradient(
+                    to top,
+                    var(--forest),
+                    var(--lime)
+                );
+        }
+
+
+        /* =========================================================
+           FLOATING STAT
+        ========================================================= */
+
+        .floating-stat {
+            position: absolute;
+
+            z-index: 5;
+
+            padding: 20px 24px;
+
+            min-width: 185px;
+
+            border-radius: 24px;
+
+            background:
+                rgba(14, 43, 27, 0.85);
+
+            border: 1px solid rgba(201,239,114,0.15);
+
+            backdrop-filter: blur(16px);
+
+            box-shadow:
+                0 25px 60px rgba(0,0,0,0.22);
+        }
+
+        .floating-stat.one {
+            right: 1%;
+            top: 300px;
+        }
+
+        .floating-stat.two {
+            right: 20%;
+            bottom: 65px;
+        }
+
+        .floating-stat span {
+            display: block;
+
+            color: rgba(255,255,255,0.58);
+
+            font-size: 10px;
+
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .floating-stat strong {
+            display: block;
+
+            margin-top: 7px;
+
+            color: var(--lime);
+
+            font-size: 28px;
+        }
+
+
+        /* =========================================================
+           HERO STATS
+        ========================================================= */
+
+        .hero-stats {
+            position: absolute;
+
+            left: 5%;
+            bottom: 65px;
+
+            display: flex;
+            gap: 14px;
+
+            z-index: 4;
+        }
+
+        .hero-stat {
+            min-width: 145px;
+
+            padding: 20px;
+
+            border-radius: 22px;
+
+            background:
+                rgba(255,255,255,0.08);
+
+            border:
+                1px solid rgba(255,255,255,0.10);
+
+            backdrop-filter: blur(14px);
+        }
+
+        .hero-stat strong {
+            display: block;
+
+            font-size: 24px;
+        }
+
+        .hero-stat span {
+            display: block;
+
+            margin-top: 6px;
+
+            font-size: 11px;
+
+            color: rgba(255,255,255,0.58);
+        }
+
+
+        /* =========================================================
+           FORM SECTION
+        ========================================================= */
+
+        .form-section {
+            padding: 120px 5%;
+
+            background: var(--paper);
+        }
+
+        .section-label {
+            color: var(--olive-dark);
+
+            font-size: 11px;
+            font-weight: 800;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+        }
+
+        .section-title {
+            margin-top: 15px;
+
+            max-width: 720px;
+
+            font-size: clamp(42px, 5vw, 72px);
+
+            line-height: 0.95;
+
+            letter-spacing: -3px;
+        }
+
+        .section-title span {
+            color: var(--olive);
+        }
+
+        .form-wrapper {
+            margin-top: 60px;
+
+            padding: 12px;
+
+            border-radius: 40px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #d9dfc9,
+                    #eef0e4
+                );
+
+            box-shadow:
+                var(--shadow);
+        }
+
+        .form-card {
+            padding: clamp(28px, 5vw, 60px);
+
+            border-radius: 31px;
+
+            background:
+                rgba(255,255,255,0.78);
+
+            border:
+                1px solid rgba(255,255,255,0.9);
+
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.8);
+        }
+
+        .form-heading {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+
+            margin-bottom: 45px;
+        }
+
+        .form-icon {
+            width: 55px;
+            height: 55px;
+
+            border-radius: 18px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: var(--forest);
+            color: var(--lime);
+
+            font-size: 24px;
+
+            box-shadow:
+                0 12px 25px rgba(23,61,43,0.18);
+        }
+
+        .form-heading h2 {
+            font-size: 27px;
+        }
+
+        .form-heading p {
+            margin-top: 5px;
+
+            color: var(--muted);
+
+            font-size: 13px;
+        }
+
+        .form-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+
+            gap: 27px;
+        }
+
+        .field {
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+        }
+
+        .field.full {
+            grid-column: 1 / -1;
+        }
+
+        .field label {
+            padding-left: 4px;
+
+            font-size: 12px;
+            font-weight: 750;
+
+            color: #586152;
+        }
+
+        .field input,
+        .field select {
+            width: 100%;
+
+            min-height: 58px;
+
+            border: 1px solid rgba(23,61,43,0.10);
+
+            border-radius: 17px;
+
+            padding: 0 18px;
+
+            background: #f2f3eb;
+
+            color: var(--forest);
+
+            font-size: 14px;
+
+            outline: none;
+
+            transition: 0.25s ease;
+
+            box-shadow:
+                inset 0 2px 8px rgba(23,61,43,0.035);
+        }
+
+        .field input:focus,
+        .field select:focus {
+            border-color: var(--lime-dark);
+
+            background: white;
+
+            box-shadow:
+                0 0 0 4px rgba(145,189,67,0.13);
+        }
+
+        .date-helper {
+            color: var(--muted);
+
+            font-size: 11px;
+        }
+
+
+        /* =========================================================
+           TOGGLE
+        ========================================================= */
+
+        .holiday-box {
+            padding: 20px 23px;
+
+            border-radius: 19px;
+
+            background: #edf0e7;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .holiday-title {
+            font-weight: 750;
+            font-size: 14px;
+        }
+
+        .holiday-description {
+            margin-top: 4px;
+
+            font-size: 11px;
+            color: var(--muted);
+        }
+
+        .switch {
+            position: relative;
+
+            width: 55px;
+            height: 31px;
+        }
+
+        .switch input {
+            display: none;
+        }
+
+        .slider {
+            position: absolute;
+            inset: 0;
+
+            border-radius: 999px;
+
+            background: #d2d8cc;
+
+            cursor: pointer;
+
+            transition: 0.25s ease;
+        }
+
+        .slider::before {
+            content: "";
+
+            position: absolute;
+
+            width: 23px;
+            height: 23px;
+
+            left: 4px;
+            top: 4px;
+
+            border-radius: 50%;
+
+            background: white;
+
+            box-shadow:
+                0 2px 6px rgba(0,0,0,0.16);
+
+            transition: 0.25s ease;
+        }
+
+        .switch input:checked + .slider {
+            background: var(--forest);
+        }
+
+        .switch input:checked + .slider::before {
+            transform: translateX(24px);
+
+            background: var(--lime);
+        }
+
+
+        /* =========================================================
+           SUBMIT
+        ========================================================= */
+
+        .submit-area {
+            margin-top: 45px;
+        }
+
+        .submit-btn {
+            width: 100%;
+
+            min-height: 70px;
+
+            border: none;
+
+            border-radius: 22px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #c9ef72,
+                    #8bdc45
+                );
+
+            color: #12331f;
+
+            font-size: 16px;
+            font-weight: 850;
+
+            cursor: pointer;
+
+            box-shadow:
+                0 15px 35px rgba(120,180,65,0.28);
+
+            transition:
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 20px 42px rgba(120,180,65,0.36);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+
+        /* =========================================================
+           FEATURE STRIP
+        ========================================================= */
+
+        .features {
+            padding: 0 5% 120px;
+        }
+
+        .feature-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 16px;
+        }
+
+        .feature {
+            min-height: 220px;
+
+            padding: 28px;
+
+            border-radius: 27px;
+
+            background: white;
+
+            border: 1px solid var(--line);
+
+            box-shadow:
+                0 15px 40px rgba(23,61,43,0.07);
+
+            transition: 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-8px);
+
+            box-shadow:
+                0 25px 50px rgba(23,61,43,0.13);
+        }
+
+        .feature-icon {
+            width: 45px;
+            height: 45px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 15px;
+
+            background: #e9f2dc;
+
+            font-size: 21px;
+        }
+
+        .feature h3 {
+            margin-top: 30px;
+
+            font-size: 18px;
+        }
+
+        .feature p {
+            margin-top: 10px;
+
+            color: var(--muted);
+
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+
+        footer {
+            padding: 35px 5%;
+
+            background: var(--forest-dark);
+
+            color: rgba(255,255,255,0.55);
+
+            display: flex;
+            justify-content: space-between;
+
+            font-size: 11px;
+        }
+
+
+        /* =========================================================
+           RESPONSIVE
+        ========================================================= */
+
+        @media (max-width: 1100px) {
+
+            .hero-object {
+                right: -60px;
+                opacity: 0.85;
+            }
+
+            .floating-stat.one {
+                right: 2%;
+            }
+
+        }
+
+        @media (max-width: 850px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                min-height: 1050px;
+
+                padding-top: 130px;
+            }
+
+            .hero-object {
+                position: relative;
+
+                top: auto;
+                right: auto;
+
+                width: 300px;
+                height: 450px;
+
+                margin: 70px auto 0;
+
+                transform:
+                    perspective(1000px)
+                    rotateY(-8deg)
+                    rotateZ(3deg);
+            }
+
+            .floating-stat {
+                display: none;
+            }
+
+            .hero-stats {
+                bottom: 35px;
+
+                width: 90%;
+
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero-stat {
+                min-width: 0;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .field.full {
+                grid-column: auto;
+            }
+
+            .feature-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media (max-width: 550px) {
+
+            .hero h1 {
+                font-size: 58px;
+                letter-spacing: -4px;
+            }
+
+            .hero-text {
+                font-size: 15px;
+            }
+
+            .hero-object {
+                width: 260px;
+                height: 400px;
+            }
+
+            .hero-stats {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-section {
+                padding-top: 80px;
+            }
+
+            footer {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+        }
+
+    </style>
 
 </head>
 
@@ -23,580 +1048,889 @@
 <body>
 
 
-<div class="dashboard">
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
 
+<nav class="nav">
 
-    <!-- ===================================================== -->
-    <!-- HEADER -->
-    <!-- ===================================================== -->
+    <a href="/" class="brand">
 
-    <div class="dashboard-header">
-
-        <div>
-
-            <h1>
-                &#127806; Farmer's Price Intelligence
-            </h1>
-
-            <p>
-                Agricultural Market Intelligence & Decision Support
-            </p>
-
+        <div class="brand-mark">
+            🌱
         </div>
+
+        Farmer's Price Intelligence
+
+    </a>
+
+
+    <div class="nav-links">
+
+        <a href="#intelligence">
+            Intelligence
+        </a>
+
+        <a href="#prediction">
+            Prediction
+        </a>
+
+        <a href="#features">
+            Features
+        </a>
 
     </div>
 
 
-    <!-- ===================================================== -->
-    <!-- MAIN FORM -->
-    <!-- ===================================================== -->
+    <a href="#prediction" class="nav-button">
+        Get Prediction
+    </a>
 
-    <div class="prediction-form-card">
+</nav>
 
 
-        <div class="section-heading">
 
-            <span class="section-icon">
-                📍
-            </span>
+<!-- =========================================================
+     HERO
+========================================================= -->
 
-            <div>
+<section class="hero">
 
-                <h2>
-                    Market Information
-                </h2>
+    <div class="hero-content">
 
-                <p>
-                    Select the market and commodity
-                </p>
-
-            </div>
-
+        <div class="eyebrow">
+            ✦ AI-POWERED AGRICULTURAL INTELLIGENCE
         </div>
 
 
-        <form
-            action="/predict"
-            method="POST"
-        >
+        <h1>
 
+            Smarter
+            <span>Prices.</span>
 
-            <!-- ================================================= -->
-            <!-- MARKET INFORMATION -->
-            <!-- ================================================= -->
+            Better
+            <span>Farming.</span>
 
-            <div class="form-grid">
+        </h1>
 
 
-                <!-- STATE -->
+        <p class="hero-text">
 
-                <div class="form-group">
+            Predict mandi prices, understand market risk,
+            analyze district intelligence and receive
+            data-driven recommendations before making
+            important selling decisions.
 
-                    <label for="state">
-                        State
-                    </label>
-
-                    <select
-                        id="state"
-                        name="state"
-                        required
-                    >
-
-                        {% for item in states %}
-
-                        <option value="{{ item }}">
-                            {{ item }}
-                        </option>
-
-                        {% endfor %}
-
-                    </select>
-
-                </div>
-
-
-                <!-- COMMODITY GROUP -->
-
-                <div class="form-group">
-
-                    <label for="commodity_group">
-                        Commodity Group
-                    </label>
-
-                    <select
-                        id="commodity_group"
-                        name="commodity_group"
-                        required
-                    >
-
-                        {% for item in commodity_groups %}
-
-                        <option value="{{ item }}">
-                            {{ item }}
-                        </option>
-
-                        {% endfor %}
-
-                    </select>
-
-                </div>
-
-
-                <!-- COMMODITY -->
-
-                <div class="form-group">
-
-                    <label for="commodity">
-                        Commodity
-                    </label>
-
-                    <select
-                        id="commodity"
-                        name="commodity"
-                        required
-                    >
-
-                        {% for item in commodities %}
-
-                        <option value="{{ item }}">
-                            {{ item }}
-                        </option>
-
-                        {% endfor %}
-
-                    </select>
-
-                </div>
-
-
-                <!-- DISTRICT -->
-
-                <div class="form-group">
-
-                    <label for="district">
-                        District
-                    </label>
-
-                    <select
-                        id="district"
-                        name="district"
-                        required
-                    >
-
-                        {% for item in districts %}
-
-                        <option value="{{ item }}">
-                            {{ item }}
-                        </option>
-
-                        {% endfor %}
-
-                    </select>
-
-                </div>
-
-            </div>
-
-
-            <!-- ================================================= -->
-            <!-- MARKET SUPPLY -->
-            <!-- ================================================= -->
-
-            <div class="section-heading">
-
-                <span class="section-icon">
-                    📦
-                </span>
-
-                <div>
-
-                    <h2>
-                        Market Supply
-                    </h2>
-
-                    <p>
-                        Enter today's market arrival
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="form-grid">
-
-
-                <div class="form-group full-width">
-
-                    <label for="arrival">
-                        Arrival (Metric Tonnes)
-                    </label>
-
-                    <input
-                        id="arrival"
-                        type="number"
-                        name="arrival"
-                        step="0.01"
-                        min="0"
-                        placeholder="Example: 5000"
-                        required
-                    >
-
-                </div>
-
-            </div>
-
-
-            <!-- ================================================= -->
-            <!-- WEATHER -->
-            <!-- ================================================= -->
-
-            <div class="section-heading">
-
-                <span class="section-icon">
-                    🌦
-                </span>
-
-                <div>
-
-                    <h2>
-                        Weather Conditions
-                    </h2>
-
-                    <p>
-                        Enter weather conditions for prediction date
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="form-grid">
-
-
-                <!-- MAX TEMP -->
-
-                <div class="form-group">
-
-                    <label for="max_temp">
-                        Maximum Temperature (°C)
-                    </label>
-
-                    <input
-                        id="max_temp"
-                        type="number"
-                        name="max_temp"
-                        step="0.1"
-                        placeholder="Example: 32.5"
-                        required
-                    >
-
-                </div>
-
-
-                <!-- MIN TEMP -->
-
-                <div class="form-group">
-
-                    <label for="min_temp">
-                        Minimum Temperature (°C)
-                    </label>
-
-                    <input
-                        id="min_temp"
-                        type="number"
-                        name="min_temp"
-                        step="0.1"
-                        placeholder="Example: 18.2"
-                        required
-                    >
-
-                </div>
-
-
-                <!-- RAINFALL -->
-
-                <div class="form-group">
-
-                    <label for="rainfall">
-                        Rainfall (mm)
-                    </label>
-
-                    <input
-                        id="rainfall"
-                        type="number"
-                        name="rainfall"
-                        step="0.1"
-                        min="0"
-                        placeholder="Example: 5.2"
-                        required
-                    >
-
-                </div>
-
-
-                <!-- WIND -->
-
-                <div class="form-group">
-
-                    <label for="windspeed">
-                        Wind Speed (km/h)
-                    </label>
-
-                    <input
-                        id="windspeed"
-                        type="number"
-                        name="windspeed"
-                        step="0.1"
-                        min="0"
-                        placeholder="Example: 16.6"
-                        required
-                    >
-
-                </div>
-
-            </div>
-
-
-            <!-- ================================================= -->
-            <!-- EVENTS -->
-            <!-- ================================================= -->
-
-            <div class="section-heading">
-
-                <span class="section-icon">
-                    📅
-                </span>
-
-                <div>
-
-                    <h2>
-                        Events
-                    </h2>
-
-                    <p>
-                        Select festival and holiday information
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="form-grid">
-
-
-                <!-- FESTIVAL -->
-
-                <div class="form-group">
-
-                    <label for="festival">
-                        Festival
-                    </label>
-
-                    <select
-                        id="festival"
-                        name="festival"
-                        required
-                    >
-
-                        {% for item in festivals %}
-
-                        <option value="{{ item }}">
-                            {{ item }}
-                        </option>
-
-                        {% endfor %}
-
-                    </select>
-
-                </div>
-
-
-                <!-- HOLIDAY -->
-
-                <div class="form-group">
-
-                    <label for="holiday">
-                        Holiday
-                    </label>
-
-                    <select
-                        id="holiday"
-                        name="holiday"
-                        required
-                    >
-
-                        <option value="0">
-                            No
-                        </option>
-
-                        <option value="1">
-                            Yes
-                        </option>
-
-                    </select>
-
-                </div>
-
-            </div>
-
-
-            <!-- ================================================= -->
-            <!-- PREDICTION DATE -->
-            <!-- ================================================= -->
-
-            <div class="section-heading">
-
-                <span class="section-icon">
-                    🗓
-                </span>
-
-                <div>
-
-                    <h2>
-                        Prediction Date
-                    </h2>
-
-                    <p>
-                        Select the date for price prediction
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="form-grid three-columns">
-
-
-                <!-- DAY -->
-
-                <div class="form-group">
-
-                    <label for="day">
-                        Day
-                    </label>
-
-                    <input
-                        id="day"
-                        type="number"
-                        name="day"
-                        min="1"
-                        max="31"
-                        value="13"
-                        required
-                    >
-
-                </div>
-
-
-                <!-- MONTH -->
-
-                <div class="form-group">
-
-                    <label for="month">
-                        Month
-                    </label>
-
-                    <input
-                        id="month"
-                        type="number"
-                        name="month"
-                        min="1"
-                        max="12"
-                        value="8"
-                        required
-                    >
-
-                </div>
-
-
-                <!-- YEAR -->
-
-                <div class="form-group">
-
-                    <label for="year">
-                        Year
-                    </label>
-
-                    <input
-                        id="year"
-                        type="number"
-                        name="year"
-                        min="2023"
-                        value="2026"
-                        required
-                    >
-
-                </div>
-
-            </div>
-
-
-            <!-- ================================================= -->
-            <!-- AUTOMATIC FEATURES INFO -->
-            <!-- ================================================= -->
-
-            <div class="auto-feature-note">
-
-                <div class="note-icon">
-                    🤖
-                </div>
-
-                <div>
-
-                    <strong>
-                        Automatic Historical Price Features
-                    </strong>
-
-                    <p>
-                        Lag 1, Lag 2, Lag 3, 7-Day Rolling Average
-                        and 30-Day Rolling Average are automatically
-                        calculated from historical market data.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- ================================================= -->
-            <!-- SUBMIT -->
-            <!-- ================================================= -->
-
-            <button
-                type="submit"
-                class="predict-button"
-            >
-
-                🔮 Predict Agricultural Price
-
-            </button>
-
-
-        </form>
-
-    </div>
-
-
-    <!-- ===================================================== -->
-    <!-- FOOTER -->
-    <!-- ===================================================== -->
-
-    <div class="page-footer">
-
-        <p>
-            Farmer's Price Intelligence System
-            • XGBoost Machine Learning
-            • Historical Market Analysis
         </p>
 
     </div>
 
 
-</div>
+
+    <!-- =====================================================
+         3D PHONE
+    ====================================================== -->
+
+    <div class="hero-object">
+
+        <div class="phone">
+
+            <div class="phone-screen">
+
+                <div class="phone-top">
+
+                    <div class="phone-small">
+                        AGRICULTURAL INTELLIGENCE
+                    </div>
+
+                    <div class="phone-title">
+                        Market<br>
+                        Insights
+                    </div>
+
+                    <div class="phone-price">
+                        ₹1,296
+                    </div>
+
+                    <div class="phone-small">
+                        predicted modal price / quintal
+                    </div>
+
+                </div>
+
+
+                <div class="phone-card">
+
+                    <div class="phone-card-label">
+                        30 DAY PRICE OUTLOOK
+                    </div>
+
+                    <strong>
+                        AI Forecast
+                    </strong>
+
+                    <div class="phone-chart">
+
+                        <div
+                            class="phone-bar"
+                            style="height:42%">
+                        </div>
+
+                        <div
+                            class="phone-bar"
+                            style="height:58%">
+                        </div>
+
+                        <div
+                            class="phone-bar"
+                            style="height:48%">
+                        </div>
+
+                        <div
+                            class="phone-bar"
+                            style="height:72%">
+                        </div>
+
+                        <div
+                            class="phone-bar"
+                            style="height:62%">
+                        </div>
+
+                        <div
+                            class="phone-bar"
+                            style="height:84%">
+                        </div>
+
+                        <div
+                            class="phone-bar"
+                            style="height:76%">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         FLOATING CARDS
+    ====================================================== -->
+
+    <div class="floating-stat one">
+
+        <span>
+            Market Prediction
+        </span>
+
+        <strong>
+            ₹1,296
+        </strong>
+
+        <span>
+            per quintal
+        </span>
+
+    </div>
+
+
+    <div class="floating-stat two">
+
+        <span>
+            Weather Impact
+        </span>
+
+        <strong>
+            26°C
+        </strong>
+
+        <span>
+            rainfall · temperature · wind
+        </span>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         HERO STATS
+    ====================================================== -->
+
+    <div class="hero-stats">
+
+        <div class="hero-stat">
+
+            <strong>5</strong>
+
+            <span>
+                Commodities
+            </span>
+
+        </div>
+
+
+        <div class="hero-stat">
+
+            <strong>10</strong>
+
+            <span>
+                Maharashtra Districts
+            </span>
+
+        </div>
+
+
+        <div class="hero-stat">
+
+            <strong>30 Days</strong>
+
+            <span>
+                Price Forecast
+            </span>
+
+        </div>
+
+
+        <div class="hero-stat">
+
+            <strong>3 Years</strong>
+
+            <span>
+                Historical Data
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PREDICTION SECTION
+========================================================= -->
+
+<section
+    class="form-section"
+    id="prediction"
+>
+
+    <div class="section-label">
+        FARMER DECISION SYSTEM
+    </div>
+
+
+    <h2 class="section-title">
+
+        Generate your
+        <span>market intelligence.</span>
+
+    </h2>
+
+
+    <div class="form-wrapper">
+
+        <div class="form-card">
+
+
+            <div class="form-heading">
+
+                <div class="form-icon">
+                    📊
+                </div>
+
+                <div>
+
+                    <h2>
+                        Market Information
+                    </h2>
+
+                    <p>
+                        Enter current market and environmental conditions
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 EXISTING FLASK FORM
+            ================================================== -->
+
+            <form
+                action="/predict"
+                method="POST"
+                id="predictionForm"
+            >
+
+
+                <div class="form-grid">
+
+
+                    <!-- STATE -->
+
+                    <div class="field">
+
+                        <label>
+                            State
+                        </label>
+
+                        <select
+                            name="state"
+                            required
+                        >
+
+                            {% for item in states %}
+
+                            <option value="{{ item }}">
+                                {{ item }}
+                            </option>
+
+                            {% endfor %}
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- COMMODITY GROUP -->
+
+                    <div class="field">
+
+                        <label>
+                            Commodity Group
+                        </label>
+
+                        <select
+                            name="commodity_group"
+                            required
+                        >
+
+                            {% for item in commodity_groups %}
+
+                            <option value="{{ item }}">
+                                {{ item }}
+                            </option>
+
+                            {% endfor %}
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- COMMODITY -->
+
+                    <div class="field">
+
+                        <label>
+                            Commodity
+                        </label>
+
+                        <select
+                            name="commodity"
+                            required
+                        >
+
+                            {% for item in commodities %}
+
+                            <option value="{{ item }}">
+                                {{ item }}
+                            </option>
+
+                            {% endfor %}
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- DISTRICT -->
+
+                    <div class="field">
+
+                        <label>
+                            District / Mandi Region
+                        </label>
+
+                        <select
+                            name="district"
+                            required
+                        >
+
+                            {% for item in districts %}
+
+                            <option value="{{ item }}">
+                                {{ item }}
+                            </option>
+
+                            {% endfor %}
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- ARRIVAL -->
+
+                    <div class="field">
+
+                        <label>
+                            Mandi Arrival (Tonnes)
+                        </label>
+
+                        <input
+                            type="number"
+                            name="arrival"
+                            min="0"
+                            step="0.01"
+                            placeholder="e.g. 150"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- FESTIVAL -->
+
+                    <div class="field">
+
+                        <label>
+                            Festival / Season
+                        </label>
+
+                        <select
+                            name="festival"
+                            required
+                        >
+
+                            {% for item in festivals %}
+
+                            <option value="{{ item }}">
+                                {{ item }}
+                            </option>
+
+                            {% endfor %}
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- MAX TEMP -->
+
+                    <div class="field">
+
+                        <label>
+                            Maximum Temperature (°C)
+                        </label>
+
+                        <input
+                            type="number"
+                            name="max_temp"
+                            step="0.1"
+                            placeholder="e.g. 32"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- MIN TEMP -->
+
+                    <div class="field">
+
+                        <label>
+                            Minimum Temperature (°C)
+                        </label>
+
+                        <input
+                            type="number"
+                            name="min_temp"
+                            step="0.1"
+                            placeholder="e.g. 21"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- RAINFALL -->
+
+                    <div class="field">
+
+                        <label>
+                            Rainfall (mm)
+                        </label>
+
+                        <input
+                            type="number"
+                            name="rainfall"
+                            min="0"
+                            step="0.1"
+                            placeholder="e.g. 5"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- WIND -->
+
+                    <div class="field">
+
+                        <label>
+                            Wind Speed
+                        </label>
+
+                        <input
+                            type="number"
+                            name="windspeed"
+                            min="0"
+                            step="0.1"
+                            placeholder="e.g. 12"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- DATE -->
+
+                    <div class="field full">
+
+                        <label>
+                            Prediction Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="predictionDate"
+                            required
+                        >
+
+                        <span class="date-helper">
+                            The system automatically calculates day, month,
+                            quarter and weekday features.
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- HIDDEN DATE VALUES -->
+
+                    <input
+                        type="hidden"
+                        name="day"
+                        id="day"
+                    >
+
+                    <input
+                        type="hidden"
+                        name="month"
+                        id="month"
+                    >
+
+                    <input
+                        type="hidden"
+                        name="year"
+                        id="year"
+                    >
+
+
+
+                    <!-- HOLIDAY -->
+
+                    <div class="field full">
+
+                        <div class="holiday-box">
+
+                            <div>
+
+                                <div class="holiday-title">
+                                    Public Holiday
+                                </div>
+
+                                <div class="holiday-description">
+                                    Enable if the selected date is a public holiday
+                                </div>
+
+                            </div>
+
+
+                            <label class="switch">
+
+                                <input
+                                    type="checkbox"
+                                    id="holidayToggle"
+                                >
+
+                                <span class="slider"></span>
+
+                            </label>
+
+                        </div>
+
+
+                        <input
+                            type="hidden"
+                            name="holiday"
+                            id="holiday"
+                            value="0"
+                        >
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- SUBMIT -->
+
+                <div class="submit-area">
+
+                    <button
+                        type="submit"
+                        class="submit-btn"
+                    >
+
+                        ✦ Generate Farmer Intelligence
+
+                    </button>
+
+                </div>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FEATURES
+========================================================= -->
+
+<section
+    class="features"
+    id="features"
+>
+
+    <div class="feature-grid">
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                🤖
+            </div>
+
+            <h3>
+                XGBoost Prediction
+            </h3>
+
+            <p>
+                Predict the expected modal mandi price
+                using the trained machine-learning model.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                📈
+            </div>
+
+            <h3>
+                30-Day Forecast
+            </h3>
+
+            <p>
+                Analyze future price movement and
+                understand the forecast direction.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                ⚠️
+            </div>
+
+            <h3>
+                Crisis & Risk
+            </h3>
+
+            <p>
+                Identify abnormal market events,
+                price deviations and potential risk.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                🌍
+            </div>
+
+            <h3>
+                District Intelligence
+            </h3>
+
+            <p>
+                Compare district-level conditions and
+                receive data-driven recommendations.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <span>
+        Farmer's Price Intelligence
+    </span>
+
+    <span>
+        Maharashtra Agricultural Market Analytics
+    </span>
+
+</footer>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+    const predictionForm =
+        document.getElementById("predictionForm");
+
+    const predictionDate =
+        document.getElementById("predictionDate");
+
+    const dayInput =
+        document.getElementById("day");
+
+    const monthInput =
+        document.getElementById("month");
+
+    const yearInput =
+        document.getElementById("year");
+
+
+    /*
+     * Convert date input into the
+     * exact fields expected by Flask.
+     */
+
+    predictionForm.addEventListener(
+        "submit",
+        function(event) {
+
+            if (!predictionDate.value) {
+
+                event.preventDefault();
+
+                alert(
+                    "Please select a prediction date."
+                );
+
+                return;
+
+            }
+
+
+            const selectedDate =
+                new Date(
+                    predictionDate.value + "T00:00:00"
+                );
+
+
+            dayInput.value =
+                selectedDate.getDate();
+
+
+            monthInput.value =
+                selectedDate.getMonth() + 1;
+
+
+            yearInput.value =
+                selectedDate.getFullYear();
+
+        }
+    );
+
+
+
+    /*
+     * Holiday toggle
+     */
+
+    const holidayToggle =
+        document.getElementById(
+            "holidayToggle"
+        );
+
+    const holidayInput =
+        document.getElementById(
+            "holiday"
+        );
+
+
+    holidayToggle.addEventListener(
+        "change",
+        function() {
+
+            holidayInput.value =
+                this.checked ? "1" : "0";
+
+        }
+    );
+
+</script>
 
 
 </body>
